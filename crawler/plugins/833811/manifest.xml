@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Following Content" />
+        <field key="version" value="Air" />
+        <field key="description" value="Following content when you scroll on elgg."/>
+        <field key="website" value="http://productionsx.tk" />
+        <field key="copyright" value="" />
+        <field key="licence" value="" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Athabasca University" />
+        <field key="version" value="0.01" />
+        <field key="description" value="This plugin serves a single run-once purpose - to fix problems created by the au_blog_widget and other plugins which over-write the blog->view metadata.  Blogs and/or blog comments will disappear if an improper 'view' metadata property exists.  The solution is simple, find and delete all the 'view' metadata of all the blog posts.  Because this plugin lists all the blogs, enabling it may take a long time (or timeout).  Once enabled, click this plugins 'Settings' for the control panel which includes the 'Go' button and diagnostic information." />
+        <field key="website" value="http://www.elgg.org/" />
+        <field key="copyright" value="&#xA9; Athabasca University 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

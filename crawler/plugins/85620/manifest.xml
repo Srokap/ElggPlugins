@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="2.0" />
+	<field key="description" value="Upload your plugins to install" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!-- 
+
+Gives admins the possibility to install, uninstall and export plugins without backend access like ftp. Also provide easy tool administration.
+
+Features:
+- Install plugins (immediately active)
+- Uninstall plugins
+- Export plugins
+- Easy activate, deactivate and reactivate of plugins (functions visible on top of default tool admin)
+
+To make this work you have to change the rights on the mod directory (not recursively to 775) this allows uploading of new plugins. If you only do this you can upload new plugins and remove only those plugins that have been uploaded by this plugin. If you would like to be able to delete the basic plugins, you'll have to recursively set the owner of the mod directory to the apache user.
+
+Version History
+2.0:
+	- added: fast tool admin capabilities
+	- added: pulldown lists of plugins now alphabetically ordered
+1.0:
+	- First release to the public
+	
+Todo:
+	- plugin ordering by drag and drop
+	- Detect upload capabilities (775)
+	- Error when updating existing plugin and not having 775 on
+	- Use $_FILES[$input_name]['tmp_name'] instead of ElggFile
+
+-->

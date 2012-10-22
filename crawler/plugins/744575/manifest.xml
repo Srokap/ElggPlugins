@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Jon Maul, Jon Dron, Brian Jorgensen" />
+	<field key="version" value="0.2" />
+	<field key="description" value="Adds a River widget to group pages showing member activities both inside and outside the group." />
+	<field key="website" value="https://handshake.mitre.org, https://landing.athabascau.ca" />
+	<field key="copyright" value="(C) The MITRE Corp. 2010, Brian Jorgensen 2010, Jon Dron 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Jon Dron" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Tagcloud for Group Custom layout - extends" />
+	<field key="website" value="http://landing.athabascau.ca/" />
+	<field key="copyright" value="(C) Athabasca University 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+	<field key="requires" value="group_custom_layout" />
+	<field key="requires" value="tagcloud" />
+
+</plugin_manifest>
+<!-- 
+
+Warning: I'm an Elgg-development-newbie - do check this code before deploying!
+
+This plugin depends on the group custom layout plugin and 
+should be placed after it. It simply adds a tag cloud for a group.
+
+This uses heavily modified bits of code from all over the place including:
+group custom layout
+tagcloud
+custom index widgets
+
+Thanks to all authors for providing inspiration and code models
+
+It would be great to use the sort function of the tagcloud plugin,
+but I can't work out how to make that work with this plugin yet, so
+this uses the built-in display_tagcloud inside Elgg itself.
+
+====================
+Version history
+====================
+0.1 initial release
+
+-->

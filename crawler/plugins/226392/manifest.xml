@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Dr Sanu P Moideen for Team Webgalli" />
+	<field key="version" value="1.5" />
+	<field key="description" value="Password strength checker pluggin for Elgg V1.5.If you are looking for any service regarding Elgg get in touch with us." />
+	<field key="website" value="http://www.webgalli.com/" />
+	<field key="copyright" value="(C) Team Webgalli 2009" />
+	<field key="licence" value="GPL 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

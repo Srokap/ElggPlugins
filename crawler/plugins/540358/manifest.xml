@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Nudge Digital" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Custom theme for Elgg. Clears out all existing CSS to make the styling easier." />
+        <field key="website" value="http://www.nudgedigital.co.uk/" />
+        <field key="copyright" value="(C) Nudge Digital 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

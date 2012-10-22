@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value=" Rosana Montes and José María de Córdoba Zea" />
+	<field key="version" value="2.0" />
+	<field key="dated" value="9/05/2011"/>
+	<field key="description" value="My Case Studies Upload, compatible with elgg 1.6 and 1.7," />
+	<field key="website" value="http://hextlearn.eu" />
+	<field key="copyright" value="(C) 2011 Universidad de Granada" />
+	<field key="licence" value="GNU Public License version 2" />
+  <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

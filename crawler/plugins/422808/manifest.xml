@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+<field key="author" value="Sergio De Falco" />
+<field key="version" value="1.0" />
+<field key="description" value="User icon menu Disabler" />
+<field key="website" value="http://www.gonk.it/" />
+<field key="copyright" value="Sergio De Falco 2010" />
+<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

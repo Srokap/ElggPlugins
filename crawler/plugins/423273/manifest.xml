@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Egxite Corp. " />
+        <field key="version" value="0.5" />
+        <field key="description" value="Egxite™ Themer - iPhone enabled personalizable theme" />
+        <field key="website" value="http://www.egxite.com" />
+        <field key="copyright" value="2009-2010 (C) Egxite Corp." />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010012901" />
+</plugin_manifest>

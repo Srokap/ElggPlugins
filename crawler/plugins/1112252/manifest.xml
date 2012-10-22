@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>snow</name>
+	<author>Sören Müller (info@soeren-mueller.com)</author>
+	<version>0.1</version>
+	<description>Let it snow!
+	Based on: http://www.schillmania.com/projects/snowstorm/</description>
+	<website>http://www.soeren-mueller.com</website>
+	<copyright>(C) Sören Müller, 2012</copyright>
+	<license>BSD</license>
+ 
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+  
+	<category>Themes</category>
+</plugin_manifest>

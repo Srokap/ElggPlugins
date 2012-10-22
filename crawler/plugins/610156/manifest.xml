@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Michael Jett" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Plugin for CLeditor. This is a jquery based RTE. Please note this requires jQuery v1.4.2. You will need to upgrade your elgg header file if you don't have v1.4.2 or greater!" />
+        <field key="website" value="http://premiumsoftware.net/cleditor/, http://mitre.org" />
+        <field key="licence" value="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2" />
+        <field key="copyright" value="MITRE" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>

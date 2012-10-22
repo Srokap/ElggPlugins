@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+<field key="author" value="Philip Hart, Centre for Learning and Performance Technology" />
+<field key="version" value="1.1 (20101125)" />
+<field key="website" value="http://www.c4lpt.co.uk/ElggConsultancy.html" />
+<field key="description" value="Improves the River Dashboard by allowing multiple Site Announcements. (Elgg 1.7.4)" />
+<field key="copyright" value="(c) Institute of Physics, 2009" />
+<field key="licence" value="GNU Public License version 2" />
+<field key="elgg_version" value="2010071002" />
+</plugin_manifest>

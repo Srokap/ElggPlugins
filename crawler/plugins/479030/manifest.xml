@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Khaled Afiouni" />
+        <field key="version" value="1.1" />
+        <field key="description" value="Require logged in user for all pages except for:&lt;ul&gt;&lt;li&gt;The Home page (of course)&lt;/li&gt;&lt;li&gt;Registeration page&lt;/li&gt;&lt;li&gt;Forgotten Password page&lt;/li&gt;&lt;li&gt;The &quot;externalpages&quot; plugin pages (Terms, Privacy, About)&lt;/li&gt;&lt;/ul&gt;" />
+        <field key="website" value="http://skinju.com/" />
+        <field key="copyright" value="(C) skinju.com 2010" />
+        <field key="licence" value="Released under the GPL license (http://www.opensource.org/licenses/gpl-license.php)" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

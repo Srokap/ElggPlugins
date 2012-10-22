@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Simon Leblanc" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Provides a simple Elgg wrapper around the microblogging class written by Simon Leblanc" />
+	<field key="website" value="http://www.leblanc-simon.fr/" />
+	<field key="copyright" value="(C) Simon Leblanc 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="recommends" value="thewire" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

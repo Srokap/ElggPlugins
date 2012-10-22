@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Matthew Saul Leifer" />
+        <field key="version" value="0.1" />
+        <field key="description" value="arXiv Widget" />
+        <field key="website" value="http://mattleifer.info/code/elgg-latex/code/elgg-arxiv" />
+        <field key="copyright" value="Matthew Saul Leifer 2009" />
+</plugin_manifest>

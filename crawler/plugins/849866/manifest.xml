@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Site code for Elgg</name>
+	<author>Sarath C - Team Webgalli</author>
+	<version>2.183</version>
+	<category>Site management</category>
+	<category>enhancement</category>
+	<description>This will add an extra layer of security to your elgg site. Only users who know the secret code of your site can register. For more elgg premium themes and plugins visit us</description>
+	<website>http://webgalli.com</website>
+	<copyright>Team Webgalli</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010111501</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+	<admin_interface>advanced</admin_interface>
+</plugin_manifest>

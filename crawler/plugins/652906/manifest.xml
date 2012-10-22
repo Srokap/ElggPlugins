@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="German Bortoli - Newbie Keetup Programmer" />
+        <field key="version" value="0.01" />
+        <field key="description" value="Best uploader for TidyPics using Pluploader" />
+        <field key="website" value="http://keetup.com" />
+        <field key="copyright" value="2010 Keetup" />
+        <field key="licence" value="GNU GPL" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>

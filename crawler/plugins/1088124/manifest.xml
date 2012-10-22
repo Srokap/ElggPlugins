@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>
+		Embrache Simple Commerce.
+		</name>
+	<author>
+		Dhrup Chand
+		BSc(Comp)
+			MSc(Comp) Dip.Bus.Admin
+			U.T.S.
+			Australia
+			http://www.embrache.com
+		</author>
+	<version>
+		1.8.6.0_2012_MM_DD#B0.2
+		</version>
+	<category>
+		PlugIn
+		</category>
+	<description>
+		Simple eCommerce for Elgg.
+		</description>
+	<website>
+		http://www.embrache.com
+		</website>
+	<copyright>
+		(c) 2011 www.EmbrachE.Com
+		</copyright>
+	<license>
+		GNU Public License version 2
+		</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+		</requires>
+	<admin_interface>
+		simple
+		</admin_interface>
+	<activate_on_install>
+		true
+		</activate_on_install>
+	<screenshot><description></description>Embrache_SimpleCommerce 1<path>screenshots/Embrache_SimpleCommerce 1</path></screenshot>	
+	<screenshot><description></description>Embrache_SimpleCommerce 2<path>screenshots/Embrache_SimpleCommerce 2</path></screenshot>
+	<screenshot><description></description>Embrache_SimpleCommerce 3<path>screenshots/Embrache_SimpleCommerce 3</path></screenshot>
+	<screenshot><description></description>Embrache_SimpleCommerce 4<path>screenshots/Embrache_SimpleCommerce 4</path></screenshot>
+	<screenshot><description></description>Embrache_SimpleCommerce 5<path>screenshots/Embrache_SimpleCommerce 5</path></screenshot>
+	<screenshot><description></description>Embrache_SimpleCommerce 6<path>screenshots/Embrache_SimpleCommerce 6</path></screenshot>
+</plugin_manifest>

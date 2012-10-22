@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="buggedcom" />
+        <field key="version" value="1.0.0" />
+        <field key="description" value="Adds 404 pages to Elgg instead of blank pages." />
+        <field key="website" value="http://www.buggedcom.co.uk/" />
+        <field key="copyright" value="(c) buggedcom 2008" />
+		<field key="licence" value="BSD" />
+		<field key="requires" value="custom_markup" />
+</plugin_manifest>

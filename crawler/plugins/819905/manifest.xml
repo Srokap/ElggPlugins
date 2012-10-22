@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Phloor Analytics OWA</name>
+	<author>void</author>
+	<version>1.8-11.11.22</version>
+	<category>PHLOOR</category>
+	<description>Enables website tracking with Open Web Analytics on your Elgg site. </description>
+	<blurb>IMPORTANT: I ran absolutely no kind of test for this plugin! 
+	See also: http://wiki.openwebanalytics.com/</blurb>
+	<website>http://www.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<screenshot>
+		<description>Phloor Analytics OWA Admin Interface</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+	
+	<screenshot>
+		<description>Open Web Analytics Admin Interface</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>
+	
+</plugin_manifest>

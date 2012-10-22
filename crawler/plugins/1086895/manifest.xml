@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="jeguit network" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Pipiou-News twitter and facebook"/>
+        <field key="website" value="http://www.jeguit.com.br" />
+        <field key="copyright" value="jeguit network 2012" />
+        <field key="licence" value="Beta 2012" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

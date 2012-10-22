@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Stephen J. O'Connor" />
+        <field key="version" value="1.0" />
+        <field key="description" value="TinyMCE plugin-embed multimedia & TinyBrowser." />
+        <field key="website" value="http:/openedweb.com" />
+        <field key="copyright" value="(C) Steve O'Connor 2008" />
+        <field key="changes in Tinybrowser(userdirs)" value="(C) Karsten Schulze 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

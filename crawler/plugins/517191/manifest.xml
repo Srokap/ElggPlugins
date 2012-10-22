@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Facyla" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Collection de widgets" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="copyright" value="(CC) Facyla 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Facyla" />
+        <field key="translation:en" value="Nick Lancaster" />
+        <field key="version" value="1.1" />
+        <field key="description" value="Outil de migration des contenus et membres d'un groupe - Objects and group members migration tool" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="copyright" value="(CC) Facyla 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

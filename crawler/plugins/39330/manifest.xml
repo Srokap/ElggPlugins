@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Laithai Team" />
+	<field key="version" value="1.5" />
+	<field key="description" value="E-OSX Theme Base On Green Rounded Theme . E-OSX Theme Look Like iPhone OSX" />
+	<field key="website" value="http://www.elgg.in.th/" />
+	<field key="copyright" value="(C) Laithai Team 2008-2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

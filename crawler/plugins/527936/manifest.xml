@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="ColdTrick IT Solutions" />
+        <field key="version" value="1.0.1" />
+        <field key="description" value="Let user pimp their own profile" />
+        <field key="website" value="http://www.coldtrick.com/" />
+        <field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+		<field key="licence" value="GNU Public License version 2" />
+		<field key="elgg_version" value="2009030101" />
+</plugin_manifest>
+<!-- 
+
+Gives users the possibility to customize the look and feel of their profile pages. 
+
+Features:
+- Change background image (default or uploaded)
+- Change background layout (position,repeat, fixed/scroll)
+- Change a number of colors (background, widget background, header, fonts etc)
+- Live Preview when changing colors and background
+- River events on update of profile style
+
+If you need to change the colors that can be configured (and know a little php), check out the views/default/customstyle/colors.php file. In it you will find an array of all the elements that can be configured by the user. Delete entries or add as you see fit.
+
+Version History
+1.0.1:
+	- fixed: background image issues in 1.7
+	- fixed: page refresh needed after upload background image
+	
+1.0 RC3:
+	- some css adjustments
+	- fixed: loading of js files in colorconfig
+1.0 RC2:
+	- added: dutch language file
+	- fixed: blank pages on some pages (page_owner was 0)
+	- fixed: palette icon not showing
+1.0 RC1:
+	- added: river event when changing style (option in admin tool setting)
+	- added: option for enable/disable custom background upload (admin tool setting)
+	- added: option for configuration of max uploadable image size
+	- added: customstyle now saved as object instead of metastring
+	- added: lightbox preview of backgroundimages
+	- added: thumbnail creation on upload custom background (small performance issue)
+	- added: !important flags on background properties
+	- added: some extra default seamless backgrounds (all free to use), removed metal background (wasn't seamless)
+	- fixed: font color previews
+	- fixed: "reset to normal design" not working in Safari/Chrome
+	- fixed: Background filesize limit not handled (cant upload, but no error message)
+	- removed: saving of customstyle as metastring (you need to reconfigure your style when upgrading from previous version)
+	- new version jscolor 1.2.3 included
+	- included lightbox js (packed only 7k!)	
+0.9:
+	- added: admin setting to allow/disallow customstyle for background and/or colors
+	- added: "show in normal design" when customstylesheet is loaded. Allows switching to default style if customstyle is a little too artistic :)
+	- added: some extra default seamless backgrounds (all free to use), the ducks are sweet
+	- fixed: remembers previously uploaded background (didn't show when it was not the current)
+0.8:
+	- First release to the public
+	
+Todo
+	- color management
+	- Use images uploaded in files and tidypic as background
+	- Create color presets (red style, green style etc) -> sets all colors
+	- enable sharing of personal theme (allows copying theme to own profile)
+
+-->

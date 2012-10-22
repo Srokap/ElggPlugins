@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Michal Zacher michal.zacher@gmail.com" />
+	<field key="version" value="2.0" />
+	<field key="description" value="Provides a location select for form and related plugins, and location-related functionalities. " />
+	<field key="website" value="www.elggdev.com" />
+	<field key="copyright" value="(C) Michal Zacher" />
+	<field key="licence" value="GPL 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="famos" />
+  <field key="version" value="0.9.2" />
+  <field key="description" value="Provides a Google Maps widget and dynamic marker generation for elgg objects" />
+  <field key="website" value="http://famos.com/" />
+  <field key="copyright" value="(C) famos 2008, 2009" />
+  <field key="elgg_version" value="2009031301" />
+</plugin_manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="MercySpeak Ministries - SIL" />
+	<field key="version" value="0.0" />
+	<field key="description" value="Replacement for the standard Elgg dashboard with user menu and Plugin rotator and auto-riverload by scroll" />
+	<field key="website" value="http://www.3liteclub.hu/" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

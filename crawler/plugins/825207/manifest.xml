@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+  <name>Accept Terms</name>
+  <author>Moni</author>
+  <version>1.0</version>
+  <category>enhancement</category>
+  <description>Ask users to read the site terms and accept them.</description>
+  <copyright>(C)Moni 2011</copyright>
+  <license>GNU Public License version 2</license>
+  <requires>
+    <type>elgg_version</type>
+    <version>2010030101</version>
+  </requires>
+  <admin_interface>advanced</admin_interface>
+  <activate_on_install>false</activate_on_install>
+</plugin_manifest>

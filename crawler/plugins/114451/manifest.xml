@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Brett Profitt" />
+	<field key="version" value="1.6" />
+	<field key="description" value="Assigns expiration dates to objects, after which they are deleted or disabled." />
+	<field key="website" value="http://www.eschoolconsultants.com" />
+	<field key="copyright" value="(C) Brett Profitt 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

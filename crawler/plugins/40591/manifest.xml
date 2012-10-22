@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Nick Sokolov (sias)" />
+        <field key="version" value="beta" />
+        <field key="description" value="Music player widget" />
+        <field key="website" value="" />
+		<field key="copyright" value="(C) 2009" />
+		<field key="copyright" value="" />
+        <field key="licence" value="" />
+</plugin_manifest>

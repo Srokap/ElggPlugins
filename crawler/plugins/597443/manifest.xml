@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin_manifest>
+	<field key="author" value="chandrasekar"/>
+	<field key="version" value="1.7"/>
+	<field key="description" value="Elgg registration validation plugin" />
+	<filed key="copyright" value="(C) kingring 2009-2010"/>
+	<field key="license" value="GPL 2.0" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>

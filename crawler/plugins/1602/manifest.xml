@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Sanu P Moideen" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Ecard plugin; This allows the users to send E Card. The admin can add or delete  cards, events etc.. I invite all of you work on this mod and make it more good." />
+        <field key="website" value="http://www.webgalli.com/" />
+		<field key="email" value="drsanupmoideen@gmail.com" />
+        <field key="copyright" value="(C) Curverider 2008" />
+        <field key="copyright" value="(C) Sanu P Moideen @ webgalli.com 2008" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

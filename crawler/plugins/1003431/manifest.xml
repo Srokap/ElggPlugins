@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Infinite scroll</name>
+	<author>Lorea developers</author>
+	<version>0.4</version>
+	<category>unbundled</category>
+	<description>Loads dynamically next pages in an entity list when reader scrolls to the bottom of the page</description>
+	<website>https://lorea.org</website>
+	<copyright>(C) Lorea 2012</copyright>
+	<license>GNU General Public License, version 2 or later</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8.3</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>

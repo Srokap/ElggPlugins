@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="John Mellberg and Dr Sanu P Moideen (Team Webgalli). Modifed by Vinsoft" />
+        <field key="version" value="1.0b3" />
+        <field key="description" value="Modified Simple Poll plugin" />
+        <field key="website" value="http://www.syslogicinc.com/ , http://www.webgalli.com, http://vinsoft.it" />
+        <field key="copyright" value="(C) John Mellberg 2009, Dr Sanu P Moideen, Vinsoft" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030702" />
+</plugin_manifest>

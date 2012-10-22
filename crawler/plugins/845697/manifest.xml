@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="SW Social Web" />
+        <field key="version" value="2.0" />
+        <field key="description" value="Contact Form for Elgg 1.8"/>
+        <field key="website" value="http://www.swsocialweb.com/shop" />
+        <field key="copyright" value="(C) SW Social Web LLC 2011" />
+        <field key="licence" value="Premium Plugin for Elgg 1.8" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

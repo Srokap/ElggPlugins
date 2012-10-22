@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dr Sanu P Moideen for Team Webgalli www.m4medicine.com" />
+        <field key="version" value="2.0" />
+        <field key="description" value="Classifieds creation and managing, which will allow users to publish some classifieds. Requires the Classified Category pluggin too." />
+        <field key="website" value="http://www.webgalli.com/ , http://www.m4medicine.com/" />
+		<field key="copyright" value="(C) Team Webgalli 2008" />
+        <field key="licence" value="GNU Public License version 2" />
+		<field key="elgg_version" value="2009022701" />
+</plugin_manifest>

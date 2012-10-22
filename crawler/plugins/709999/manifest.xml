@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Marek Lompart" />
+        <field key="version" value="1.0" />
+        <field key="description" value="add a popup widget." />
+        <field key="website" value="http://dslive.sk" />
+        <field key="copyright" value="(C) mlmedia.sk" />
+	    <field key="licence" value="GNU Public License version 2" />
+	    <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

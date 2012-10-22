@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Provides the ability to introduce superadmins" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!--
+Provides the ability to introduce superadmins
+
+Features:
+- introduces the superadmin role:
+  initially only the first admin created has the superadmin abilities (so he/she needs to make others superadmin)
+- only superadmins have access to site administration (this is not air tight but blocks access to all pg/admin/* pages)
+- in the plugin setting you can control if normal admins can make other normal admin or can delete users (default this is disabled for normal admins)
+
+Version history:
+
+0.1:
+	- initial release
+	
+-->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Dr Sanu P Moideen @ Team Webgalli" />
+    <field key="version" value="5.177" />
+    <field key="description" value="Checks new user registration against the Stop Forum Spam database and prevents user registration" />
+    <field key="website" value="http://www.webgalli.com" />
+    <field key="copyright" value="(C) Team Webgalli 2010 -2011" />
+    <field key="licence" value="GPL" />
+    <field key="elgg_version" value="2009030702" />    
+</plugin_manifest>

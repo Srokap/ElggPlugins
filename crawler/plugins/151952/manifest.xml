@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Chris West" />
+        <field key="version" value="4" />
+        <field key="description" value="Skills review widget." />
+        <field key="website" value="http://www.redhilllearningspace.org.uk/" />
+        <field key="copyright" value="(C) C. West 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+		    <field key="elgg_version" value="2009030702" />
+</plugin_manifest>

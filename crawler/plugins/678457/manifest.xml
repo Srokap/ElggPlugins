@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Michal Zacher" />
+	<field key="version" value="1.9" />
+	<field key="description" value="Forum" />
+	<field key="website" value="www.elggdev.com" />
+	<field key="vazco_after" value="groups"/>
+	<field key="copyright" value="(C) Michal Zacher" />
+	<field key="licence" value="Commercial - http://elggdev.com/pg/license" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

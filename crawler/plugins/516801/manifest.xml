@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Tingxi Tan @ Grid Research Centre" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Folders extension for Elgg Files"/>
+        <field key="website" value="http://grc.ucalgary.ca" />
+        <field key="copyright" value="(C) Grid Research Centre 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010040201" />
+</plugin_manifest>

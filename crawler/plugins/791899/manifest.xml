@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Roger Curry, Grid Research Centre" />
+	<field key="version" value="0.1" />
+	<field key="description" value="OpenTok/TokBox videochat plugin for Elgg" />
+	<field key="website" value="http://grc.ucalgary.ca/" />
+	<field key="copyright" value="(C) Grid Research Centre 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+<!--
+=========================
+Features
+=========================
+- Uses OpenTok API to provide a videochat room
+- Single chat room requires embed url (can be obtained from:
+   http://www.tokbox.com/opentok/plugnplay/basicembed)
+- Multi room chat requires an API key/secret (can be obtained from:
+   http://www.tokbox.com/opentok/api/documentation/gettingstarted#getAPIKeyhttp)
+- List of available chat rooms (based on elgg access controls)
+- Rooms will automatically be removed after 24 hours (not tested)
+- Can also be used by non-loggedin users (Join Only)
+- Chat can be popped out into a separate window
+
+=========================
+Version Information
+=========================
+0.1 (2011-09-14):
+	- first release
+
+-->

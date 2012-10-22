@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Scott Miller and Dhrup Chand"/>
+        <field key="version" value="1.0" />
+        <field key="description" value="Scott's Canvas Menu simplified and extended" />
+        <field key="website" value="ensci.us" />
+        <field key="copyright" value="(c) Dhrtup0 Chand " />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

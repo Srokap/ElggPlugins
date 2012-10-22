@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Ivan Vergés - Ballo Microstudi SL" />
+	<field key="version" value="0.9.5" />
+	<field key="description" value="Kaltura Interactive Video plugin" />
+	<field key="website" value="http://www.microstudi.net/elgg/" />
+	<field key="copyright" value="(C) Ballo Microstudi SL 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

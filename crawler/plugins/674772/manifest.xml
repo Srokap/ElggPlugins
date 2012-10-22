@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="gillie" />
+    <field key="version" value="0.2" />
+    <field key="description" value="Set a user as editor by username" />
+    <field key="website" value="www.me4real.com" />
+    <field key="copyright" value="(C) www.me4real.com 2011" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2010071002" />    
+</plugin_manifest>

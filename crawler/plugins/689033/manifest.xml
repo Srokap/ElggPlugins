@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dario Agliottone" />
+        <field key="version" value="2" />
+        <field key="description" value="Connect Elgg account with Facebook\Twitter account" />
+        <field key="elgg_version" value="1.7" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Angel Gabriel" />
+        <field key="version" value="3.0.2 - Elgg 1.7.6" />
+        <field key="description" value="Add a plus to your riverdashboard." />
+        <field key="website" value="http://dev.redvabel.com" />
+        <field key="copyright" value="None - See credits.txt for more information" />
+        <field key="licence" value="GNU Public License version 2" />
+       <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

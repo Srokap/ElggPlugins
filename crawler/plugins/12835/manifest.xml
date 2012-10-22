@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Simon and Curverider" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Christmas Theme for Elgg v1.1!" />
+	<field key="website" value="http://www.elgg.org/" />
+	<field key="copyright" value="(C) DigitalX Team 2008" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Benjamin Graham" />
+        <field key="version" value="1.7" />
+        <field key="description" value="Provides encrypted/decrypted messages to elgg" />
+        <field key="website" value="http://benjamingraham.name/" />
+        <field key="copyright" value="(C) Benjamin Graham 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="requires" value="thickbox" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

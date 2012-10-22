@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Mark Beachill" />
+    <field key="version" value="0.1" />
+    <field key="description" value="Displays a twitter related to the website" />
+    <field key="website" value="NA" />
+    <field key="copyright" value="(C) admin 2009" />
+    <field key="licence" value="License here" />
+    <field key="elgg_version" value="2009030702" />    
+</plugin_manifest>

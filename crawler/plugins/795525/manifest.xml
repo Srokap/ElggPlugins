@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="addme2u.com" />
+        <field key="version" value="1.0" />
+        <field key="description" value="CrazyText widget" />
+		<field key="licence" value="License free version 2011" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

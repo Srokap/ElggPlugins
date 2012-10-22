@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Jamie Clinton" />
+        <field key="version" value="0.5" />
+        <field key="description" value="Zend Lucene Search" />
+        <field key="website" value="http://gamebrahma.com/" />
+        <field key="copyright" value="(C) GameBrahma 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009072201" />
+</plugin_manifest>
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Prashant Juvekar" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Do any post login actions for every user who logs in" />
+        <field key="website" value="http://www.socialtrak.com/" />
+        <field key="copyright" value="(C) SocialTrak 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

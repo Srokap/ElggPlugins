@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="BelieveCollective 2009" />
+	<field key="version" value="1.5" />
+	<field key="description" value="Provides listserv functionality to Elgg" />
+	<field key="website" value="http://www.believecollective.net/" />
+	<field key="copyright" value="(C) BelieveCollective 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="BelieveCollective 2009" />
+	<field key="version" value="1.5" />
+	<field key="description" value="Provides listserv functionality to Elgg" />
+	<field key="website" value="http://www.believecollective.net/" />
+	<field key="copyright" value="(C) BelieveCollective 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

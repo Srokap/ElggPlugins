@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Leo de Carvalho" />
+    <field key="version" value="1.2" />
+    <field key="description" value="Username and password checker pluggin." />
+    <field key="website" value="" />
+    <field key="copyright" value="(C) Leo de Carvalho 2010" />
+    <field key="licence" value="GPL 2" />
+    <field key="elgg_version" value="1.7.x" />
+</plugin_manifest>

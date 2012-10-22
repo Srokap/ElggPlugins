@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="CrazyMofo77" />
+    <field key="version" value="1.0" />
+    <field key="description" value="Elgg manage_multi_users plugin. This plugin allows admin to delete, ban multiple users." />
+    <field key="website" value="http://manfling.net/" />
+    <field key="copyright" value="(C) CrazyMofo77 2011" />
+	<field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+
+<!-- 
+Based on the original manage_multi_users plugin. This was merely reworked for a few cosmetic
+improvements to make it work with my site's administration menu just a little bit
+better. Other than that, all functionality was left completely in tact.
+-->

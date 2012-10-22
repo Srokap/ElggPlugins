@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin_manifest>
+	<field key="author" value="François-Xavier NION" />
+	<field key="version" value="2.0" />
+	<field key="description" value="Create Users and profile fields with RestFul API or CSV import" />
+	<field key="website" value="http://fxnion.free.fr/" />
+	<field key="copyright" value="(C) Fx NION 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value"2009072201">
+</plugin_manifest>

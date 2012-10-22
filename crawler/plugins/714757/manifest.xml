@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="1.1" />
+	<field key="description" value="Ability to add multiple group admins" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+<!-- 
+
+=========================
+Version Information
+=========================
+1.1 (2011-04-21):
+	- added: group tool option to control who can assign admins
+	- added: dutch language file
+
+1.0:
+	- initial version
+
+-->

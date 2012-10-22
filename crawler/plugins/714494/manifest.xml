@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="oscar" />
+        <field key="version" value="1.0" />
+        <field key="description" value="This is a magic cristal ball that will answer all your yes/no questions. Please use it just for fun.It adds a page and widget to answer your yes/no questions." />
+        <field key="website" value="http://www.yanggwey.com/" />
+		<field key="email" value="ombeben@gmail.com" />
+        <field key="copyright" value="" />
+        <field key="licence" value="GNU Public License version 2" />
+		<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

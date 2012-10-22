@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="NoELAb" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Fast by Default - Elgg Performances and SEO by NoELAb.com. Remember to add htaccess and robots.txt in the root of your domain" />
+        <field key="website" value="http://www.noelab.com/" />
+        <field key="copyright" value="(C) Noelab" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

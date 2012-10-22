@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Gabriel Monge-Franco" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Automagically translates an Elgg site to the user's browser language, instead of using a default site-wide language." />
+        <field key="website" value="http://gabriel.mongefranco.com" />
+        <field key="copyright" value="Copyright (C) 2009 Gabriel Monge-Franco. All rights reserved.  Todos los derechos reservados." />
+        <field key="licence" value="GNU Public License version 3" />
+        <field key="recommends" value="translationbrowser" />
+        <field key="elgg_version" value="2009030702" />
+</plugin_manifest>

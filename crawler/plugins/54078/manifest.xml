@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dirk Pelzer aka HiTo81" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Let users add specific HTML Code to widget." />
+        <field key="website" value="http://elgg.org" />
+        <field key="copyright" value="(C) Dirk Pelzer 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

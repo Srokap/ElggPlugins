@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin_manifest>
+    <field key="author" value="Alex Hokanson" />
+    <field key="version" value="0.1.0" />
+    <field key="description" value="Displays information about a user's Xfire profile." />
+    <field key="website" value="http://www.elgg.org/" />
+    <field key="copyright" value="(C) Visionary Web, 2011" />
+</plugin_manifest> 

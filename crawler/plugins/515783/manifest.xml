@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Radagast Solutions" />
+        <field key="version" value="0.5" />
+        <field key="description" value="Bulk invite" />
+        <field key="website" value="http://radagast.biz/" />
+        <field key="copyright" value="(C) Radagast Solutions 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009061701" />
+</plugin_manifest>

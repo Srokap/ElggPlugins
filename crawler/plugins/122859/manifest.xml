@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Brett Profitt" />
+        <field key="version" value="1.0b3" />
+        <field key="description" value="Allows users to send invitations with optional support for Open Inviter (openinviter.com)" />
+        <field key="website" value="http://www.eschoolconsultants.com" />
+	<field key="email" value="brett.profitt@gmail.com" />
+        <field key="copyright" value="(C) Brett Profitt 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+

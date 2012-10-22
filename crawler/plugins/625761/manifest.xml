@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Bortoli German" />
+	<field key="version" value="1.7" />
+	<field key="description" value="Makes your URLs more SEO for special characters, accents words, etc (its nice for latin people)" />
+	<field key="website" value="http://www.keetup.com/" />
+	<field key="copyright" value="(C) Bortoli German - Keetup - 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

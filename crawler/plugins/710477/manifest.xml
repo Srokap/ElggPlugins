@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Julien Crestin / Human Connect (jcrestin [at] human-connect.com)" />
+        <field key="version" value="0.2" />
+        <field key="description" value="Plugin for seesmic Desktop 2 http://seesmic.com/products/desktop" />
+        <field key="website" value="http://human-connect.com/" />
+        <field key="copyright" value="(C) Julien Crestin 2011" />
+        <field key="licence" value="GNU Public License version 3" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

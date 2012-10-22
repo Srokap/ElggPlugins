@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Brian Jorgensen" />
+    <field key="version" value="1.6.1.3" />
+    <field key="description" value="Provides a widget for the profile page that lists that user's blog posts." />
+    <field key="website" value="http://www.moosetrout.com/elgg/plugins/au_blog_widget" />
+    <field key="copyright" value="Copyright 2010 Brian Jorgensen" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2009072201" />
+</plugin_manifest>

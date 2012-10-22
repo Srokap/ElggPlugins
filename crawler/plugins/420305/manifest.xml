@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Scott Wilson, Bernhard Hoisl" />
+	<field key="version" value="2.2" />
+	<field key="description" value="Use wookie widgets!" />
+	<field key="website" value="http://www.getwookie.org/" />
+	<field key="copyright" value="(C) Scott Wilson, Bernhard Hoisl 2010" />
+	<field key="licence" value="MIT" />
+</plugin_manifest>

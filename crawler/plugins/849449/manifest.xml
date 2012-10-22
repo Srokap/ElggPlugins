@@ -1,0 +1,4150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Headshift" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Lien personnalisé barre d'entête" />
+        <field key="website" value="http://www.headshift.com/" />
+        <field key="copyright" value="(C) Headshift 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009061701" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Discution intantanée (Chat)" />
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="0.4.5" />
+	<field key="description" value="Fournit un chat simple sur Elgg" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!-- 
+
+Provides a chat/instant messaging feature based completely on the Elgg platform.
+Start chatting from the profile icon of a user, or by selecting a friend from the friendpicker on the chattoolbar. 
+Sessions will be shown on the chattoolbar.
+
+Features:	
+	- Privately chat with everyone in the community
+	- Special Chat Toolbar (collapsable)
+	- online/offline indication
+	- multiple friends in one chatsession
+	- multiple sessions
+	- invite community friends
+	- smileys
+
+Version History
+0.4.5
+	- added: sound on new chatsession or on new message in minimized session (only once) (admin configurable)
+	- added: flashing of new sessions or on new message in minimized session (admin configurable) 
+	- added: count of total members of chatsession
+	- added: Dutch translation
+	- added: extendable view ("elggchat/extensions") that allows other plugins to add stuff to the toolbar
+	- added: admin option for enabling/disabling extensions (all on or all off)
+	- added: user setting to configure who can contact you (effects only profile icon menu)
+	- changed: friendspicker now differs between online and offline users
+	- changed: cleaned up the language files 
+	- fixed: friendspicker not showing more than 50 friends
+	- fixed: Cleanup cron not running (wrong interval)
+	- fixed: caching of js/css causing trouble
+	- fixed: css conflict with 'online' plugin
+
+0.4
+	- added: admin configurable online/offline detection (e.g. last action < 60 secs is active, 60 - 600 secs is idle and > 600 secs is offline)
+	- added: sessions will change color if new messages arrived
+	- added: on refresh open session will be remembered
+	- added: remembering of chattoolbar presentation
+	- added: admin option for retention of chatsession data
+	- added: user leaves all chat session on logoff
+	- added: user option for disabling the chatbar
+	- changed: js now in the right place (caching)
+	- changed: revamped the interface
+	- changed: chatsessions stick to bar
+	- changed: polling mechanisme (more efficient, reduced database queries, reduced connections to webserver)
+	- removed: custom jQuery (lost over 200k code :)
+	- removed: invited mechanisme (no difference between invites and chatmembers)
+	- removed: a lot of css (hopefully better browser support)
+0.3
+	- added: online/offline detection based on last_action under 600 sec (elgg default)
+	- added: modify chatwindow titles dynamicly (on session refresh)
+	- added: re-introduction of polling interval slowdown (less activity, slower polling, reduced serverload)
+	- fixed: change order of sessions on toolbar	
+	- fixed: windows stick at their position
+	- fixed: friendspicker not correctly displayed in IE
+	- fixed: a lot of css issue's
+0.2	
+	- added: chattoolbar (resides at bottom of the window)
+	- added: friendspicker on toolbar (click a friend to start a session)
+	- added: shows session info on join (only for the person who joins)
+	- changed: all js in a separate file
+	- fixed: emoticons now animate every time
+	- fixed: invite friends shows already invited friends
+	- fixed: invite friends shows max of 10 friends	
+0.1	
+	- first release to the public
+
+Todo:
+	- expand toolbar height when having more than 4 or 5 sessions (based on available width)
+	- chatrooms
+	- block users
+	- user option for having the chat with friends only (or other security groups)
+	- user can set own state (online, offline, away, etc)
+	- security of chatsession
+	- timestamp on messages
+	
+screenshot: http://i40.tinypic.com/a57y11.jpg
+
+--><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Lien personnalisé barre d'entête (Custom Topbar Link)" />
+        <field key="author" value="Headshift" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Ce plugin permet de personnaliser des liens dans la barre d'entête. Il ajoute un simple lien, personnalisable à la «topbar» (barre d'entête). Le lien apparaît entre dans le menu outils par défaut et le lien paramètres, et est visible à tous les utilisateurs. Le lien est configuré par l'écran d'administration (y compris les paramètres de l'URL, lien texte, attribut HTML (s) et des couleurs)." />
+        <field key="website" value="http://www.headshift.com/" />
+        <field key="copyright" value="(C) Headshift 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009061701-V1.7" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Questions de Liang</name>
+	<author>Evan Winslow, Liang</author>
+	<version>1.8.0.3</version>
+	<category>content</category>
+	<blurb>Questions plugin</blurb>
+	<description>Adds ability for users to ask questions to each other and get answers.</description>
+	<description>Ajoute, pour les utilisateurs, des possibilités de se poser des questions et d'avoir des réponses.</description>	<website>http://evanwinslow.com/</website>
+	<copyright>(C) 2011 Evan Winslow, Liang</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010030101</version>
+	</requires>
+	<screenshot>
+		<path>screenshots/group-questions.png</path>
+		<description>Ask questions to a certain group of users</description>
+	</screenshot>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Captcha sous forme de texte (Text Captcha)</name>
+	<author>Liang</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>fournit un Captcha sous forme de texte</description>
+	<website>http://community.elgg.org/pg/profile/arsalanlee</website>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010030101</version>
+	</requires>
+	<admin_interface>advanced</admin_interface>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Galerie Photo Tidypics de liang (Tidypics liang)</name>
+	<author>Liang,Cash Costello and the Tidypics Team</author>
+	<version>1.8.0.4 Liang</version>
+	<category>bundled</category>
+	<category>media</category>
+	<description>Galerie Photo Tidypics de Mr Liang</description>
+	<website>http://code.google.com/p/tidypics/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030702</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>advanced</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Barre d'entête vasco (vasco topbar)" />
+	<field key="author" value="Michal Zacher" />
+	<field key="version" value="1.3" />
+	<field key="description" value="Augmente les fonctionnalités de la barre d'entête (topbar)" />
+	<field key="website" value="www.elggdev.com" />
+	<field key="copyright" value="(C Michal Zacher" />
+	<field key="licence" value="" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mon Plugin</name>
+	<author>Mon Nom</author>
+	<version>1.0</version>
+	<description>Voici une description de mon plugin et de ces caractéristiques.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Mon Nom ou Entreprise 2012</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<category>communication</category>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mes Plugin</name>
+	<author>Elgg</author>
+	<version>1.0</version>
+	<blurb>Description courte.</blurb>
+	<description>C'est une plus longue et plus intéressante description de mon plugin, ses caractéristiques, et d'autres informations importantes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Elgg 2011</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030802</version>
+	</requires>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<screenshot>
+		<description>Une copie d'écran en exemple</description>
+		<path>graphics/plugin_ss1.png</path>
+	</screenshot>
+
+	<screenshot>
+		<description>Une autre copie d'écran</description>
+		<path>graphics/plugin_ss2.png</path>
+	</screenshot>
+
+	<category>admin</category>
+	<category>api</category>
+
+	<requires>
+		<type>php_extension</type>
+		<name>gd</name>
+	</requires>
+
+	<requires>
+		<type>php_ini</type>
+		<name>short_open_tag</name>
+		<value>off</value>
+	</requires>
+
+	<requires>
+		<type>php_extension</type>
+		<name>made_up</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>fake_plugin</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+		<comparison>lt</comparison>
+	</requires>
+
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>blog</plugin>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.0</version>
+	</conflicts>
+
+	<provides>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+	</provides>
+
+	<provides>
+		<type>php_extension</type>
+		<name>curl</name>
+		<version>1.0</version>
+	</provides>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Blog</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Blog plugin</blurb>
+	<description>Ajoute des possibilités de blogs à votre installation d'Elgg.</description>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion Favoris - Signets (Bookmarks)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Ajoute et permet les commentaires sur des favoris.</blurb>
+	<description>Ajoute la possibilité pour les utilisateurs de mettre dans les favoris des sites internes ou externes. Les autres utilisateurs peuvent commenter ces liens mis dans les favoris.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion avancés des catégories (Site-wide Categories)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<blurb>Ajoute la gestion avancés des catégories</blurb>
+	<description>Gestion avancés des catégories permet aux administrateurs de définir des catégories, et permet aux utilisateurs du site d'en ajouter.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Index personnalisé (Custom Index)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Une démonstration de comment créer une page d'accueil pour plugin.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Tableau de bord utilisateurs (User Dashboard)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Un widget qui s'occuppe du tableau de bord des utilisateurs</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Outils de développement d'Elgg (Elgg Developer Tools)</name>
+	<author>Core developers</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>development</category>
+	<blurb>Outils de développement pour for Elgg</blurb>
+	<description>Un ensemble d'outils pour écrire des plugins et des thèmes. Il est recommandé que vous placez ce plugin en tête de la liste des plugins.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Diagnostics</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>development</category>
+	<category>admin</category>
+	<description>Outil de diagnostics d'Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Intégration Fichier Média (Embed)</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Permet aux utilisateurs d'envoyer facilement des fichiers médias intégrés dans les zones de textes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>file</name>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages externes (External Pages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Crée une simple page web pour les rubriques suivantes : à propos, contact, droits et confidentialités, et termes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fichier (File)</name>	<name>File</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Plugin permettant de d'envoyer des fichiers à partager, et de les gérer</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ramasse miette sur la base de données d'elgg (Garbage Collector)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Lance des tâches de nettoyage des bases de données</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Groupes (Groups)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<category>widget</category>
+	<description>Fournit les éléments permenttant de créer des groupes sous Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion des droits HTML (HTMLawed)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Fournit un filtrage sécurisé. Désactiver ce plugin est très dangeureux en terme de sécurité. NE PAS DESACTIVER.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 3</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Inviter des amis (Invite Friends)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Inviter des amis par invitation mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Avis sur le contenu "Aime ou pas" (Likes)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Permet aux utilisateurs de donner leur avis sur le contenu du site (en cochant les choix "aime" ou "n'aime pas").</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Consultation journal système (Log Browser)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet la consultation du fichier journal des évènements systèmes</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Archivage du journal du système (Log Rotate)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet d'archiver le journal système à intervals spéficiques</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Membres (Members)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Liste des membres de votre site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Forum (Message Board)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Ce plugin permet aux utilisateurs de mettre un forum sur leur profil pour que d'autres utilisateurs envoient leurs commentaires.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Messages internes (Messages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>communication</category>
+	<description>Gestion des messages internes dans Elgg. Ce plugin permet aux utilisateurs de s'envoyer des messages sans passer par une adresse mail.</description>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<website>http://www.elgg.org/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Notifications</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<description>Plugin d'Elgg gérant les notifications</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>API OAuth (OAuth API)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Fournit les bibliothèques OAuth et l'accès aux APIs.</description>
+	<category>bundled</category>
+	<category>api</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>oauth_lib</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Elgg Pages</description>
+	<website>http://www.elgg.org</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Profil (Profile)</name>
+	<description>Plugin du profil par défaut.</description>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License Version 2</license>
+	<activate_on_install>true</activate_on_install>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Signalement contenu (Reported Content)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Ajoute une option qui permet aux utilisateures de signalé un contenu, et aux administrateurs de le vérifier.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Recherche (Search)</name>
+	<author>The MITRE Corporation, Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Permet la recherche l'éléments sur tous le site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nuage de tags (Tag Cloud)</name>
+	<author>Cash Costello</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Un Widget qui gère les nuages de tags.</description>
+	<website>http://cashcostello.com/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Microblog (The Wire)</name>
+	<author>JHU/APL and core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<description>Le Microblog sur Elgg (ou Fil), permet d'envoyer des messages courts (140 caractères) (comme Twitter...)</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>TinyMCE</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Installe le plugin qui active l'éditeur TinyMCE.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter Widget</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Simple widget permettant de faire du twitter</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter API</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Permet aux utilisateurs d'authentifier leur compte Elgg sous Twitter.</description>
+	<category>api</category>
+	<category>bundled</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>oauth_api</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>twitterservice</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Validation utilisateur par Mail (User Validation by Email)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Validation simple d'un compte utlisateur par Mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ecoute audio MP3 (Zaudio)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<category>multimedia</category>
+	<description>Ce plugin simple permet aux utilisateurs d'écouter des mp3 dans une page.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Personnalisation Menu et Sous-Menu (Custom Menu and Submenu)</name>
+	<author>Chetan Varshney</author>
+	<version>1.8</version>
+ 	<description>Crée des nouveau menu, sous-menu, ajuste les menus du site</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.ektasoftwares.com/</website>
+	<copyright>(C) Chetan Varshney</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>custom_index</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>before</priority>
+		<plugin>facebook_theme</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>before</priority>
+		<plugin>purity_theme</plugin>
+	</requires>
+
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Désactive le menu "Plus" (Disable More Menu)</name>
+	<author>Purusothaman Ramanujam</author>
+	<version>1.8</version>
+	<description>Active le menu "Plus" des menus du site.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.iYaffle.com/</website>
+	<copyright>(C) Purusothaman Ramanujam</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Diapo_Facile (easy_theme_slide)</name>
+	<author>June B</author>
+	<version>1.0</version>
+	<category>theme</category>
+	<description>Thème de June B s'appellant Easy Theme (Slide)</description>
+	<website>http://www.jubo.co.uk</website>
+	<copyright>(C) 2011 June B</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+		<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+		
+		
+	
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Calendrier des évènements (event calendar)" />
+        <field key="author" value="Kevin Jardine &lt;kevin@radagast.biz&gt;" />
+        <field key="version" value="0.8" />
+        <field key="description" value="Installe sur Elgg un plugin permettant de gérer un calendrier des évènements" />
+        <field key="website" value="http://radagast.biz/" />
+        <field key="copyright" value="(C) Radagast Solutions 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030101" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion étendue des amis (Extendafriend)</name>
+	<author>Matt Beckett (matt@clever-name.com)</author>
+	<version>1.1</version>
+	<description>Adds a "tag" like interface to the add-friend link. Each tag will create a collection and add that friend to it, or just add the friend to the existing collection.</description>
+	<description>Ajoute un "tag" fonctionnant comme une interface au lien ajout ami. Chaque "tag" va créer une collection et y ajouter l'ami, ou tout simplement ajouter l'ami à la collection existante.</description>
+	<website>http://clever-name.com</website>
+	<copyright>(C) Matt Beckett, 2011</copyright>
+	<license>GNU Public License version 2</license>
+ 
+	<!-- All plugins must require either elgg_version or elgg_release. -->
+	<requires>
+		<type>elgg_version</type>
+		<version>2011032200</version>
+	</requires>
+  
+	<category>Social</category>
+	<admin_interface>advanced</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Facebook</name>
+	<author>Evan Winslow Contributor:imoni</author>
+	<version>1.0</version>
+	<category>theme</category>
+	<description>Modifie votre site Elgg site pour qu'il ressemble et se comporte de façon très similaire à Facebook.</description>
+	<website>https://github.com/ewinslow/elgg-facebook_theme</website>
+	<copyright>(C) 2011 Evan Winslow</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+	
+	<screenshot>
+		<description>Index</description>
+		<path>screenshots/index.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Dashboard</description>
+		<path>screenshots/dashboard.png</path>
+	</screenshot>
+	<screenshot>
+		<description>User's Wall</description>
+		<path>screenshots/user-wall.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Group's Wall</description>
+		<path>screenshots/group-wall.png</path>
+	</screenshot>
+	
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Demande d'amitié (Friends Requests)</name>
+	<author>ColdTrick IT Solutions</author>
+	<version>3.0</version>
+	<blurb>Permet aux utilisateur de confirmer les demandes d'amis. Permet la réciprocité dans les demandes d'amis.</blurb>
+	<description>Permet aux utilisateurs de confirmer les demandes d'amitié. Se faire des amis comme sur Facebook ou LinkedIn</description>
+	<website>http://www.coldtrick.com/</website>
+	<copyright>(C) ColdTrick IT Solutions 2009 - 2011</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+ 	<category>ColdTrick</category>
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Profil Facebook" />
+	<field key="author" value="floops.com.ar,mariano tomasini" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Ajoute un profil similaire à Facebook" />
+	<field key="website" value="http://www.floops.com.ar/" />
+	<field key="copyright" value="(C) floops 2010-2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<!--
+- test in elgg 1.7.11
+--><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nom des menus (Phloor Menuitem)</name>
+	<author>void</author>
+	<version>1.8-11.11.20</version>
+	<category>PHLOOR</category>
+	<description>Pour donner de noms aux pour votre sites</description>
+	<blurb>Active la gestion des noms de menu ('Menuitem') par les administrateurs.</blurb>
+	<website>http://www.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<screenshot>
+		<description>Phloor Menuitem [1]</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Editer le Formulaire [2]</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem [3]</description>
+		<path>screenshots/screenshot-1.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem En action [4]</description>
+		<path>screenshots/screenshot-2.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Paramètres Plugin [5]</description>
+		<path>screenshots/screenshot-3.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Interface administrateur créer un formulaire [6]</description>
+		<path>screenshots/screenshot-4.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Phloor Menuitem Interface administrateur vue d'ensemble [7]</description>
+		<path>screenshots/screenshot-5.png</path>
+	</screenshot>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>phloor_menubuilder</name>
+		<version>1.8</version>
+	</suggests>
+
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème 5 (Phloor Menu Sooperfish THEME5)</name>
+	<author>void</author>
+	<version>11.11.10</version>	
+	<category>admin</category>
+	<category>PHLOOR</category>	
+	<description>
+		Voici un thème pour un menu 'Sooperfish'.
+	</description>
+	<website>http://www.13net.at/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+
+	<screenshot>
+		<description>Phloor Menu Sooperfish THEME5</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+	
+	<requires>	
+		<type>plugin</type>
+		<name>phloor_menu_sooperfish</name>
+		<version>11.11.10</version>
+	</requires>
+	
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Sondages (Polls)" />
+	<field key="author" value="Kevin Jardine(Modified by Anirup Dutta to work with elgg 1.8)" />
+	<field key="version" value="0.8" />
+	<field key="description" value="Ajoute des sondages et des widgets sondages (ré-écrit à partir de la version original de John Mellberg)" />
+	<field key="website" value="http://radagast.biz/" />
+	<field key="copyright" value="(C) Kevin Jardine 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009021601" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Pureté (Purity Theme)</name>
+	<author>SocialApparatus</author>
+	<version>1.1</version>
+	<category>theme</category>
+	<description>
+		Premier Thème de SocialApparatus.
+	</description>
+	<website>http://www.socialapparatus.com</website>
+	<copyright>(C) 2011 SocialApparatus</copyright>
+	<license>Commercial</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+		
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Recaptcha" />
+  	<field key="author" value="Shyfti.com" />
+	<field key="version" value="1.0" />
+	<field key="description" value="fournit la gestion des recaptchas (Nécessite un compte recaptcha [http://www.google.com/recaptcha])." />
+	<field key="website" value="" />
+	<field key="copyright" value="(C) RPGRealms 2011 shyfti.com" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fil RSS (RSS News Feed)</name>
+	<author>Purusothaman Ramanujam</author>
+	<version>1.8</version>
+	<description>Ajoute du contenue frais à votre site à partir d'autres sites web.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.iYaffle.com/</website>
+	<copyright>(C) Purusothaman Ramanujam</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Aggrégation Flux RSS (SimplePie RSS Feed Integration)</name>
+	<author>Cash Costello</author>
+	<version>0.4</version>
+	<category>widget</category>
+	<description>Fournit un widget qui tire de l'information des flux RSS</description>
+	<website>http://www.cashcostello.com/</website>
+	<copyright>Cash Costello 2009-2011</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>xml</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>pcre</name>
+	</requires>
+	<suggests>
+		<type>php_extension</type>
+		<name>mbstring</name>
+	</suggests>
+	<suggests>
+		<type>php_extension</type>
+		<name>iconv</name>
+	</suggests>
+	<provides>
+		<type>plugin</type>
+		<name>simplepie_api</name>
+		<version>1.2.1</version>
+	</provides>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Tableau de bord social (Social Dashboard)" />
+        <field key="author" value="SW Social Web" />
+        <field key="version" value="Daktron" />
+        <field key="description" value="Tableau de bord social pour Elgg 1.8"/>
+        <field key="website" value="http://www.swsocialweb.com/shop" />
+        <field key="copyright" value="(C) SW Social Web LLC 2011" />
+        <field key="licence" value="Premium Plugin for Elgg 1.8" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Editeur de traduction (Translation Editor)</name>
+	<author>ColdTrick IT Solutions</author>
+	<version>1.0</version>
+	<blurb>Edite les traductions</blurb>
+	<description>L'éditeur de traduction facilite les traductions d'Elgg.</description>
+	<website>http://www.coldtrick.com/</website>
+	<copyright>(C) ColdTrick IT Solutions 2009 - 2011</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+ 	<category>ColdTrick</category>
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Liste de vidéos (Video List)</name>
+	<author>Prateek Choudhary, Core developers, Lorea</author>
+	<version>1.8-beta2</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>multimedia</category>
+	<description>Ce plugin permet aux utilisateurs de créer de bibliothèques de vidéos.</description>
+	<website>http://elgg.org/</website>
+	<copyright>(C) prateek.choudhary 2008-09, Elgg 2010, Lorea 2011</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010111501</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Formulaire de Contact (de SW Social Web)" />
+        <field key="author" value="SW Social Web" />
+        <field key="version" value="2.0" />
+        <field key="description" value="Formulaire de Contact pour Elgg V1.8, version modifiée par Jean-Baptiste Duclos pour recevoir des fichiers langues (version française faite)"/>
+        <field key="website" value="http://www.swsocialweb.com/shop" />
+        <field key="copyright" value="(C) SW Social Web LLC 2011" />
+        <field key="licence" value="Premium Plugin for Elgg 1.8" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fil RSS (RSS News Feed)</name>
+	<author>Purusothaman Ramanujam</author>
+	<version>1.8</version>
+	<description>Ajoute du contenue frais à votre site à partir d'autres sites web.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.iYaffle.com/</website>
+	<copyright>(C) Purusothaman Ramanujam</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Barre d'entête vasco (vasco topbar)" />
+	<field key="author" value="Michal Zacher" />
+	<field key="version" value="1.3" />
+	<field key="description" value="Augmente les fonctionnalités de la barre d'entête (topbar)" />
+	<field key="website" value="www.elggdev.com" />
+	<field key="copyright" value="(C Michal Zacher" />
+	<field key="licence" value="" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Headshift" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Lien personnalisé barre d'entête" />
+        <field key="website" value="http://www.headshift.com/" />
+        <field key="copyright" value="(C) Headshift 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009061701" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Discution intantanée (Chat)" />
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="0.4.5" />
+	<field key="description" value="Fournit un chat simple sur Elgg" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!-- 
+
+Provides a chat/instant messaging feature based completely on the Elgg platform.
+Start chatting from the profile icon of a user, or by selecting a friend from the friendpicker on the chattoolbar. 
+Sessions will be shown on the chattoolbar.
+
+Features:	
+	- Privately chat with everyone in the community
+	- Special Chat Toolbar (collapsable)
+	- online/offline indication
+	- multiple friends in one chatsession
+	- multiple sessions
+	- invite community friends
+	- smileys
+
+Version History
+0.4.5
+	- added: sound on new chatsession or on new message in minimized session (only once) (admin configurable)
+	- added: flashing of new sessions or on new message in minimized session (admin configurable) 
+	- added: count of total members of chatsession
+	- added: Dutch translation
+	- added: extendable view ("elggchat/extensions") that allows other plugins to add stuff to the toolbar
+	- added: admin option for enabling/disabling extensions (all on or all off)
+	- added: user setting to configure who can contact you (effects only profile icon menu)
+	- changed: friendspicker now differs between online and offline users
+	- changed: cleaned up the language files 
+	- fixed: friendspicker not showing more than 50 friends
+	- fixed: Cleanup cron not running (wrong interval)
+	- fixed: caching of js/css causing trouble
+	- fixed: css conflict with 'online' plugin
+
+0.4
+	- added: admin configurable online/offline detection (e.g. last action < 60 secs is active, 60 - 600 secs is idle and > 600 secs is offline)
+	- added: sessions will change color if new messages arrived
+	- added: on refresh open session will be remembered
+	- added: remembering of chattoolbar presentation
+	- added: admin option for retention of chatsession data
+	- added: user leaves all chat session on logoff
+	- added: user option for disabling the chatbar
+	- changed: js now in the right place (caching)
+	- changed: revamped the interface
+	- changed: chatsessions stick to bar
+	- changed: polling mechanisme (more efficient, reduced database queries, reduced connections to webserver)
+	- removed: custom jQuery (lost over 200k code :)
+	- removed: invited mechanisme (no difference between invites and chatmembers)
+	- removed: a lot of css (hopefully better browser support)
+0.3
+	- added: online/offline detection based on last_action under 600 sec (elgg default)
+	- added: modify chatwindow titles dynamicly (on session refresh)
+	- added: re-introduction of polling interval slowdown (less activity, slower polling, reduced serverload)
+	- fixed: change order of sessions on toolbar	
+	- fixed: windows stick at their position
+	- fixed: friendspicker not correctly displayed in IE
+	- fixed: a lot of css issue's
+0.2	
+	- added: chattoolbar (resides at bottom of the window)
+	- added: friendspicker on toolbar (click a friend to start a session)
+	- added: shows session info on join (only for the person who joins)
+	- changed: all js in a separate file
+	- fixed: emoticons now animate every time
+	- fixed: invite friends shows already invited friends
+	- fixed: invite friends shows max of 10 friends	
+0.1	
+	- first release to the public
+
+Todo:
+	- expand toolbar height when having more than 4 or 5 sessions (based on available width)
+	- chatrooms
+	- block users
+	- user option for having the chat with friends only (or other security groups)
+	- user can set own state (online, offline, away, etc)
+	- security of chatsession
+	- timestamp on messages
+	
+screenshot: http://i40.tinypic.com/a57y11.jpg
+
+--><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Lien personnalisé barre d'entête (Custom Topbar Link)" />
+        <field key="author" value="Headshift" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Ce plugin permet de personnaliser des liens dans la barre d'entête. Il ajoute un simple lien, personnalisable à la «topbar» (barre d'entête). Le lien apparaît entre dans le menu outils par défaut et le lien paramètres, et est visible à tous les utilisateurs. Le lien est configuré par l'écran d'administration (y compris les paramètres de l'URL, lien texte, attribut HTML (s) et des couleurs)." />
+        <field key="website" value="http://www.headshift.com/" />
+        <field key="copyright" value="(C) Headshift 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009061701-V1.7" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Questions de Liang</name>
+	<author>Evan Winslow, Liang</author>
+	<version>1.8.0.3</version>
+	<category>content</category>
+	<blurb>Questions plugin</blurb>
+	<description>Adds ability for users to ask questions to each other and get answers.</description>
+	<description>Ajoute, pour les utilisateurs, des possibilités de se poser des questions et d'avoir des réponses.</description>	<website>http://evanwinslow.com/</website>
+	<copyright>(C) 2011 Evan Winslow, Liang</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010030101</version>
+	</requires>
+	<screenshot>
+		<path>screenshots/group-questions.png</path>
+		<description>Ask questions to a certain group of users</description>
+	</screenshot>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Captcha sous forme de texte (Text Captcha)</name>
+	<author>Liang</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>fournit un Captcha sous forme de texte</description>
+	<website>http://community.elgg.org/pg/profile/arsalanlee</website>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010030101</version>
+	</requires>
+	<admin_interface>advanced</admin_interface>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Galerie Photo Tidypics de liang (Tidypics liang)</name>
+	<author>Liang,Cash Costello and the Tidypics Team</author>
+	<version>1.8.0.4 Liang</version>
+	<category>bundled</category>
+	<category>media</category>
+	<description>Galerie Photo Tidypics de Mr Liang</description>
+	<website>http://code.google.com/p/tidypics/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030702</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>advanced</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Barre d'entête vasco (vasco topbar)" />
+	<field key="author" value="Michal Zacher" />
+	<field key="version" value="1.3" />
+	<field key="description" value="Augmente les fonctionnalités de la barre d'entête (topbar)" />
+	<field key="website" value="www.elggdev.com" />
+	<field key="copyright" value="(C Michal Zacher" />
+	<field key="licence" value="" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mon Plugin</name>
+	<author>Mon Nom</author>
+	<version>1.0</version>
+	<description>Voici une description de mon plugin et de ces caractéristiques.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Mon Nom ou Entreprise 2012</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<category>communication</category>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mes Plugin</name>
+	<author>Elgg</author>
+	<version>1.0</version>
+	<blurb>Description courte.</blurb>
+	<description>C'est une plus longue et plus intéressante description de mon plugin, ses caractéristiques, et d'autres informations importantes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Elgg 2011</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030802</version>
+	</requires>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<screenshot>
+		<description>Une copie d'écran en exemple</description>
+		<path>graphics/plugin_ss1.png</path>
+	</screenshot>
+
+	<screenshot>
+		<description>Une autre copie d'écran</description>
+		<path>graphics/plugin_ss2.png</path>
+	</screenshot>
+
+	<category>admin</category>
+	<category>api</category>
+
+	<requires>
+		<type>php_extension</type>
+		<name>gd</name>
+	</requires>
+
+	<requires>
+		<type>php_ini</type>
+		<name>short_open_tag</name>
+		<value>off</value>
+	</requires>
+
+	<requires>
+		<type>php_extension</type>
+		<name>made_up</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>fake_plugin</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+		<comparison>lt</comparison>
+	</requires>
+
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>blog</plugin>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.0</version>
+	</conflicts>
+
+	<provides>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+	</provides>
+
+	<provides>
+		<type>php_extension</type>
+		<name>curl</name>
+		<version>1.0</version>
+	</provides>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Blog</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Blog plugin</blurb>
+	<description>Ajoute des possibilités de blogs à votre installation d'Elgg.</description>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion Favoris - Signets (Bookmarks)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Ajoute et permet les commentaires sur des favoris.</blurb>
+	<description>Ajoute la possibilité pour les utilisateurs de mettre dans les favoris des sites internes ou externes. Les autres utilisateurs peuvent commenter ces liens mis dans les favoris.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion avancés des catégories (Site-wide Categories)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<blurb>Ajoute la gestion avancés des catégories</blurb>
+	<description>Gestion avancés des catégories permet aux administrateurs de définir des catégories, et permet aux utilisateurs du site d'en ajouter.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Index personnalisé (Custom Index)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Une démonstration de comment créer une page d'accueil pour plugin.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Tableau de bord utilisateurs (User Dashboard)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Un widget qui s'occuppe du tableau de bord des utilisateurs</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Outils de développement d'Elgg (Elgg Developer Tools)</name>
+	<author>Core developers</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>development</category>
+	<blurb>Outils de développement pour for Elgg</blurb>
+	<description>Un ensemble d'outils pour écrire des plugins et des thèmes. Il est recommandé que vous placez ce plugin en tête de la liste des plugins.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Diagnostics</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>development</category>
+	<category>admin</category>
+	<description>Outil de diagnostics d'Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Intégration Fichier Média (Embed)</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Permet aux utilisateurs d'envoyer facilement des fichiers médias intégrés dans les zones de textes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>file</name>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages externes (External Pages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Crée une simple page web pour les rubriques suivantes : à propos, contact, droits et confidentialités, et termes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fichier (File)</name>	<name>File</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Plugin permettant de d'envoyer des fichiers à partager, et de les gérer</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ramasse miette sur la base de données d'elgg (Garbage Collector)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Lance des tâches de nettoyage des bases de données</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Groupes (Groups)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<category>widget</category>
+	<description>Fournit les éléments permenttant de créer des groupes sous Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion des droits HTML (HTMLawed)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Fournit un filtrage sécurisé. Désactiver ce plugin est très dangeureux en terme de sécurité. NE PAS DESACTIVER.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 3</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Inviter des amis (Invite Friends)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Inviter des amis par invitation mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Avis sur le contenu "Aime ou pas" (Likes)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Permet aux utilisateurs de donner leur avis sur le contenu du site (en cochant les choix "aime" ou "n'aime pas").</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Consultation journal système (Log Browser)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet la consultation du fichier journal des évènements systèmes</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Archivage du journal du système (Log Rotate)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet d'archiver le journal système à intervals spéficiques</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Membres (Members)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Liste des membres de votre site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Forum (Message Board)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Ce plugin permet aux utilisateurs de mettre un forum sur leur profil pour que d'autres utilisateurs envoient leurs commentaires.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Messages internes (Messages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>communication</category>
+	<description>Gestion des messages internes dans Elgg. Ce plugin permet aux utilisateurs de s'envoyer des messages sans passer par une adresse mail.</description>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<website>http://www.elgg.org/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Notifications</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<description>Plugin d'Elgg gérant les notifications</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>API OAuth (OAuth API)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Fournit les bibliothèques OAuth et l'accès aux APIs.</description>
+	<category>bundled</category>
+	<category>api</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>oauth_lib</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Elgg Pages</description>
+	<website>http://www.elgg.org</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Profil (Profile)</name>
+	<description>Plugin du profil par défaut.</description>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License Version 2</license>
+	<activate_on_install>true</activate_on_install>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Signalement contenu (Reported Content)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Ajoute une option qui permet aux utilisateures de signalé un contenu, et aux administrateurs de le vérifier.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Recherche (Search)</name>
+	<author>The MITRE Corporation, Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Permet la recherche l'éléments sur tous le site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nuage de tags (Tag Cloud)</name>
+	<author>Cash Costello</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Un Widget qui gère les nuages de tags.</description>
+	<website>http://cashcostello.com/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Microblog (The Wire)</name>
+	<author>JHU/APL and core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<description>Le Microblog sur Elgg (ou Fil), permet d'envoyer des messages courts (140 caractères) (comme Twitter...)</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>TinyMCE</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Installe le plugin qui active l'éditeur TinyMCE.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter Widget</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Simple widget permettant de faire du twitter</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter API</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Permet aux utilisateurs d'authentifier leur compte Elgg sous Twitter.</description>
+	<category>api</category>
+	<category>bundled</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>oauth_api</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>twitterservice</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Validation utilisateur par Mail (User Validation by Email)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Validation simple d'un compte utlisateur par Mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ecoute audio MP3 (Zaudio)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<category>multimedia</category>
+	<description>Ce plugin simple permet aux utilisateurs d'écouter des mp3 dans une page.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Personnalisation Menu et Sous-Menu (Custom Menu and Submenu)</name>
+	<author>Chetan Varshney</author>
+	<version>1.8</version>
+ 	<description>Crée des nouveau menu, sous-menu, ajuste les menus du site</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.ektasoftwares.com/</website>
+	<copyright>(C) Chetan Varshney</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>custom_index</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>before</priority>
+		<plugin>facebook_theme</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>before</priority>
+		<plugin>purity_theme</plugin>
+	</requires>
+
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Custom Menu and Sub Menu</description>
+		<path>screenshots/custom_menu-1.png</path>
+	</screenshot>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Désactive le menu "Plus" (Disable More Menu)</name>
+	<author>Purusothaman Ramanujam</author>
+	<version>1.8</version>
+	<description>Active le menu "Plus" des menus du site.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.iYaffle.com/</website>
+	<copyright>(C) Purusothaman Ramanujam</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Diapo_Facile (easy_theme_slide)</name>
+	<author>June B</author>
+	<version>1.0</version>
+	<category>theme</category>
+	<description>Thème de June B s'appellant Easy Theme (Slide)</description>
+	<website>http://www.jubo.co.uk</website>
+	<copyright>(C) 2011 June B</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+		<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+		
+		
+	
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Calendrier des évènements (event calendar)" />
+        <field key="author" value="Kevin Jardine &lt;kevin@radagast.biz&gt;" />
+        <field key="version" value="0.8" />
+        <field key="description" value="Installe sur Elgg un plugin permettant de gérer un calendrier des évènements" />
+        <field key="website" value="http://radagast.biz/" />
+        <field key="copyright" value="(C) Radagast Solutions 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030101" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion étendue des amis (Extendafriend)</name>
+	<author>Matt Beckett (matt@clever-name.com)</author>
+	<version>1.1</version>
+	<description>Adds a "tag" like interface to the add-friend link. Each tag will create a collection and add that friend to it, or just add the friend to the existing collection.</description>
+	<description>Ajoute un "tag" fonctionnant comme une interface au lien ajout ami. Chaque "tag" va créer une collection et y ajouter l'ami, ou tout simplement ajouter l'ami à la collection existante.</description>
+	<website>http://clever-name.com</website>
+	<copyright>(C) Matt Beckett, 2011</copyright>
+	<license>GNU Public License version 2</license>
+ 
+	<!-- All plugins must require either elgg_version or elgg_release. -->
+	<requires>
+		<type>elgg_version</type>
+		<version>2011032200</version>
+	</requires>
+  
+	<category>Social</category>
+	<admin_interface>advanced</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Facebook</name>
+	<author>Evan Winslow Contributor:imoni</author>
+	<version>1.0</version>
+	<category>theme</category>
+	<description>Modifie votre site Elgg site pour qu'il ressemble et se comporte de façon très similaire à Facebook.</description>
+	<website>https://github.com/ewinslow/elgg-facebook_theme</website>
+	<copyright>(C) 2011 Evan Winslow</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+	
+	<screenshot>
+		<description>Index</description>
+		<path>screenshots/index.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Dashboard</description>
+		<path>screenshots/dashboard.png</path>
+	</screenshot>
+	<screenshot>
+		<description>User's Wall</description>
+		<path>screenshots/user-wall.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Group's Wall</description>
+		<path>screenshots/group-wall.png</path>
+	</screenshot>
+	
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Demande d'amitié (Friends Requests)</name>
+	<author>ColdTrick IT Solutions</author>
+	<version>3.0</version>
+	<blurb>Permet aux utilisateur de confirmer les demandes d'amis. Permet la réciprocité dans les demandes d'amis.</blurb>
+	<description>Permet aux utilisateurs de confirmer les demandes d'amitié. Se faire des amis comme sur Facebook ou LinkedIn</description>
+	<website>http://www.coldtrick.com/</website>
+	<copyright>(C) ColdTrick IT Solutions 2009 - 2011</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+ 	<category>ColdTrick</category>
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Profil Facebook" />
+	<field key="author" value="floops.com.ar,mariano tomasini" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Ajoute un profil similaire à Facebook" />
+	<field key="website" value="http://www.floops.com.ar/" />
+	<field key="copyright" value="(C) floops 2010-2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<!--
+- test in elgg 1.7.11
+--><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nom des menus (Phloor Menuitem)</name>
+	<author>void</author>
+	<version>1.8-11.11.20</version>
+	<category>PHLOOR</category>
+	<description>Pour donner de noms aux pour votre sites</description>
+	<blurb>Active la gestion des noms de menu ('Menuitem') par les administrateurs.</blurb>
+	<website>http://www.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<screenshot>
+		<description>Phloor Menuitem [1]</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Editer le Formulaire [2]</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem [3]</description>
+		<path>screenshots/screenshot-1.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem En action [4]</description>
+		<path>screenshots/screenshot-2.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Paramètres Plugin [5]</description>
+		<path>screenshots/screenshot-3.png</path>
+	</screenshot>	
+	<screenshot>
+		<description>Phloor Menuitem Interface administrateur créer un formulaire [6]</description>
+		<path>screenshots/screenshot-4.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Phloor Menuitem Interface administrateur vue d'ensemble [7]</description>
+		<path>screenshots/screenshot-5.png</path>
+	</screenshot>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>phloor_menubuilder</name>
+		<version>1.8</version>
+	</suggests>
+
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème 5 (Phloor Menu Sooperfish THEME5)</name>
+	<author>void</author>
+	<version>11.11.10</version>	
+	<category>admin</category>
+	<category>PHLOOR</category>	
+	<description>
+		Voici un thème pour un menu 'Sooperfish'.
+	</description>
+	<website>http://www.13net.at/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+
+	<screenshot>
+		<description>Phloor Menu Sooperfish THEME5</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+	
+	<requires>	
+		<type>plugin</type>
+		<name>phloor_menu_sooperfish</name>
+		<version>11.11.10</version>
+	</requires>
+	
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Sondages (Polls)" />
+	<field key="author" value="Kevin Jardine(Modified by Anirup Dutta to work with elgg 1.8)" />
+	<field key="version" value="0.8" />
+	<field key="description" value="Ajoute des sondages et des widgets sondages (ré-écrit à partir de la version original de John Mellberg)" />
+	<field key="website" value="http://radagast.biz/" />
+	<field key="copyright" value="(C) Kevin Jardine 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009021601" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Thème Pureté (Purity Theme)</name>
+	<author>SocialApparatus</author>
+	<version>1.1</version>
+	<category>theme</category>
+	<description>
+		Premier Thème de SocialApparatus.
+	</description>
+	<website>http://www.socialapparatus.com</website>
+	<copyright>(C) 2011 SocialApparatus</copyright>
+	<license>Commercial</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>profile</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>groups</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>messages</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>search</plugin>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>thewire</plugin>
+	</requires>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.8</version>
+	</suggests>
+		
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="name" value="Recaptcha" />
+  	<field key="author" value="Shyfti.com" />
+	<field key="version" value="1.0" />
+	<field key="description" value="fournit la gestion des recaptchas (Nécessite un compte recaptcha [http://www.google.com/recaptcha])." />
+	<field key="website" value="" />
+	<field key="copyright" value="(C) RPGRealms 2011 shyfti.com" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fil RSS (RSS News Feed)</name>
+	<author>Purusothaman Ramanujam</author>
+	<version>1.8</version>
+	<description>Ajoute du contenue frais à votre site à partir d'autres sites web.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.iYaffle.com/</website>
+	<copyright>(C) Purusothaman Ramanujam</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010040201</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Aggrégation Flux RSS (SimplePie RSS Feed Integration)</name>
+	<author>Cash Costello</author>
+	<version>0.4</version>
+	<category>widget</category>
+	<description>Fournit un widget qui tire de l'information des flux RSS</description>
+	<website>http://www.cashcostello.com/</website>
+	<copyright>Cash Costello 2009-2011</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>xml</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>pcre</name>
+	</requires>
+	<suggests>
+		<type>php_extension</type>
+		<name>mbstring</name>
+	</suggests>
+	<suggests>
+		<type>php_extension</type>
+		<name>iconv</name>
+	</suggests>
+	<provides>
+		<type>plugin</type>
+		<name>simplepie_api</name>
+		<version>1.2.1</version>
+	</provides>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="name" value="Tableau de bord social (Social Dashboard)" />
+        <field key="author" value="SW Social Web" />
+        <field key="version" value="Daktron" />
+        <field key="description" value="Tableau de bord social pour Elgg 1.8"/>
+        <field key="website" value="http://www.swsocialweb.com/shop" />
+        <field key="copyright" value="(C) SW Social Web LLC 2011" />
+        <field key="licence" value="Premium Plugin for Elgg 1.8" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Editeur de traduction (Translation Editor)</name>
+	<author>ColdTrick IT Solutions</author>
+	<version>1.0</version>
+	<blurb>Edite les traductions</blurb>
+	<description>L'éditeur de traduction facilite les traductions d'Elgg.</description>
+	<website>http://www.coldtrick.com/</website>
+	<copyright>(C) ColdTrick IT Solutions 2009 - 2011</copyright>
+	<license>GNU Public License version 2</license>
+	
+	<requires>
+		<type>elgg_version</type>
+		<version>2011061200</version>
+	</requires>
+	
+ 	<category>ColdTrick</category>
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Liste de vidéos (Video List)</name>
+	<author>Prateek Choudhary, Core developers, Lorea</author>
+	<version>1.8-beta2</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>multimedia</category>
+	<description>Ce plugin permet aux utilisateurs de créer de bibliothèques de vidéos.</description>
+	<website>http://elgg.org/</website>
+	<copyright>(C) prateek.choudhary 2008-09, Elgg 2010, Lorea 2011</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010111501</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mon Plugin</name>
+	<author>Mon Nom</author>
+	<version>1.0</version>
+	<description>Voici une description de mon plugin et de ces caractéristiques.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Mon Nom ou Entreprise 2012</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<category>communication</category>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mes Plugin</name>
+	<author>Elgg</author>
+	<version>1.0</version>
+	<blurb>Description courte.</blurb>
+	<description>C'est une plus longue et plus intéressante description de mon plugin, ses caractéristiques, et d'autres informations importantes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Elgg 2011</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030802</version>
+	</requires>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<screenshot>
+		<description>Une copie d'écran en exemple</description>
+		<path>graphics/plugin_ss1.png</path>
+	</screenshot>
+
+	<screenshot>
+		<description>Une autre copie d'écran</description>
+		<path>graphics/plugin_ss2.png</path>
+	</screenshot>
+
+	<category>admin</category>
+	<category>api</category>
+
+	<requires>
+		<type>php_extension</type>
+		<name>gd</name>
+	</requires>
+
+	<requires>
+		<type>php_ini</type>
+		<name>short_open_tag</name>
+		<value>off</value>
+	</requires>
+
+	<requires>
+		<type>php_extension</type>
+		<name>made_up</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>fake_plugin</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+		<comparison>lt</comparison>
+	</requires>
+
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>blog</plugin>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.0</version>
+	</conflicts>
+
+	<provides>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+	</provides>
+
+	<provides>
+		<type>php_extension</type>
+		<name>curl</name>
+		<version>1.0</version>
+	</provides>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Blog</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Blog plugin</blurb>
+	<description>Ajoute des possibilités de blogs à votre installation d'Elgg.</description>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion Favoris - Signets (Bookmarks)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Ajoute et permet les commentaires sur des favoris.</blurb>
+	<description>Ajoute la possibilité pour les utilisateurs de mettre dans les favoris des sites internes ou externes. Les autres utilisateurs peuvent commenter ces liens mis dans les favoris.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion avancés des catégories (Site-wide Categories)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<blurb>Ajoute la gestion avancés des catégories</blurb>
+	<description>Gestion avancés des catégories permet aux administrateurs de définir des catégories, et permet aux utilisateurs du site d'en ajouter.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Index personnalisé (Custom Index)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Une démonstration de comment créer une page d'accueil pour plugin.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Tableau de bord utilisateurs (User Dashboard)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Un widget qui s'occuppe du tableau de bord des utilisateurs</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Outils de développement d'Elgg (Elgg Developer Tools)</name>
+	<author>Core developers</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>development</category>
+	<blurb>Outils de développement pour for Elgg</blurb>
+	<description>Un ensemble d'outils pour écrire des plugins et des thèmes. Il est recommandé que vous placez ce plugin en tête de la liste des plugins.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Diagnostics</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>development</category>
+	<category>admin</category>
+	<description>Outil de diagnostics d'Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Intégration Fichier Média (Embed)</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Permet aux utilisateurs d'envoyer facilement des fichiers médias intégrés dans les zones de textes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>file</name>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages externes (External Pages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Crée une simple page web pour les rubriques suivantes : à propos, contact, droits et confidentialités, et termes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fichier (File)</name>	<name>File</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Plugin permettant de d'envoyer des fichiers à partager, et de les gérer</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ramasse miette sur la base de données d'elgg (Garbage Collector)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Lance des tâches de nettoyage des bases de données</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Groupes (Groups)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<category>widget</category>
+	<description>Fournit les éléments permenttant de créer des groupes sous Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion des droits HTML (HTMLawed)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Fournit un filtrage sécurisé. Désactiver ce plugin est très dangeureux en terme de sécurité. NE PAS DESACTIVER.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 3</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Inviter des amis (Invite Friends)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Inviter des amis par invitation mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Avis sur le contenu "Aime ou pas" (Likes)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Permet aux utilisateurs de donner leur avis sur le contenu du site (en cochant les choix "aime" ou "n'aime pas").</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Consultation journal système (Log Browser)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet la consultation du fichier journal des évènements systèmes</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Archivage du journal du système (Log Rotate)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet d'archiver le journal système à intervals spéficiques</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Membres (Members)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Liste des membres de votre site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Forum (Message Board)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Ce plugin permet aux utilisateurs de mettre un forum sur leur profil pour que d'autres utilisateurs envoient leurs commentaires.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Messages internes (Messages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>communication</category>
+	<description>Gestion des messages internes dans Elgg. Ce plugin permet aux utilisateurs de s'envoyer des messages sans passer par une adresse mail.</description>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<website>http://www.elgg.org/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Notifications</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<description>Plugin d'Elgg gérant les notifications</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>API OAuth (OAuth API)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Fournit les bibliothèques OAuth et l'accès aux APIs.</description>
+	<category>bundled</category>
+	<category>api</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>oauth_lib</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Elgg Pages</description>
+	<website>http://www.elgg.org</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Profil (Profile)</name>
+	<description>Plugin du profil par défaut.</description>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License Version 2</license>
+	<activate_on_install>true</activate_on_install>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Signalement contenu (Reported Content)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Ajoute une option qui permet aux utilisateures de signalé un contenu, et aux administrateurs de le vérifier.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Recherche (Search)</name>
+	<author>The MITRE Corporation, Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Permet la recherche l'éléments sur tous le site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nuage de tags (Tag Cloud)</name>
+	<author>Cash Costello</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Un Widget qui gère les nuages de tags.</description>
+	<website>http://cashcostello.com/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Microblog (The Wire)</name>
+	<author>JHU/APL and core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<description>Le Microblog sur Elgg (ou Fil), permet d'envoyer des messages courts (140 caractères) (comme Twitter...)</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>TinyMCE</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Installe le plugin qui active l'éditeur TinyMCE.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter Widget</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Simple widget permettant de faire du twitter</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter API</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Permet aux utilisateurs d'authentifier leur compte Elgg sous Twitter.</description>
+	<category>api</category>
+	<category>bundled</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>oauth_api</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>twitterservice</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Validation utilisateur par Mail (User Validation by Email)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Validation simple d'un compte utlisateur par Mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ecoute audio MP3 (Zaudio)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<category>multimedia</category>
+	<description>Ce plugin simple permet aux utilisateurs d'écouter des mp3 dans une page.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mon Plugin</name>
+	<author>Mon Nom</author>
+	<version>1.0</version>
+	<description>Voici une description de mon plugin et de ces caractéristiques.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Mon Nom ou Entreprise 2012</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<category>communication</category>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Mes Plugin</name>
+	<author>Elgg</author>
+	<version>1.0</version>
+	<blurb>Description courte.</blurb>
+	<description>C'est une plus longue et plus intéressante description de mon plugin, ses caractéristiques, et d'autres informations importantes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>(C) Elgg 2011</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_version</type>
+		<version>2009030802</version>
+	</requires>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<screenshot>
+		<description>Une copie d'écran en exemple</description>
+		<path>graphics/plugin_ss1.png</path>
+	</screenshot>
+
+	<screenshot>
+		<description>Une autre copie d'écran</description>
+		<path>graphics/plugin_ss2.png</path>
+	</screenshot>
+
+	<category>admin</category>
+	<category>api</category>
+
+	<requires>
+		<type>php_extension</type>
+		<name>gd</name>
+	</requires>
+
+	<requires>
+		<type>php_ini</type>
+		<name>short_open_tag</name>
+		<value>off</value>
+	</requires>
+
+	<requires>
+		<type>php_extension</type>
+		<name>made_up</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>fake_plugin</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile</name>
+		<version>1.0</version>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+		<comparison>lt</comparison>
+	</requires>
+
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>blog</plugin>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.0</version>
+	</conflicts>
+
+	<provides>
+		<type>plugin</type>
+		<name>profile_api</name>
+		<version>1.3</version>
+	</provides>
+
+	<provides>
+		<type>php_extension</type>
+		<name>curl</name>
+		<version>1.0</version>
+	</provides>
+
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Blog</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Blog plugin</blurb>
+	<description>Ajoute des possibilités de blogs à votre installation d'Elgg.</description>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion Favoris - Signets (Bookmarks)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<blurb>Ajoute et permet les commentaires sur des favoris.</blurb>
+	<description>Ajoute la possibilité pour les utilisateurs de mettre dans les favoris des sites internes ou externes. Les autres utilisateurs peuvent commenter ces liens mis dans les favoris.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion avancés des catégories (Site-wide Categories)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<blurb>Ajoute la gestion avancés des catégories</blurb>
+	<description>Gestion avancés des catégories permet aux administrateurs de définir des catégories, et permet aux utilisateurs du site d'en ajouter.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Index personnalisé (Custom Index)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Une démonstration de comment créer une page d'accueil pour plugin.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Tableau de bord utilisateurs (User Dashboard)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Un widget qui s'occuppe du tableau de bord des utilisateurs</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Outils de développement d'Elgg (Elgg Developer Tools)</name>
+	<author>Core developers</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>development</category>
+	<blurb>Outils de développement pour for Elgg</blurb>
+	<description>Un ensemble d'outils pour écrire des plugins et des thèmes. Il est recommandé que vous placez ce plugin en tête de la liste des plugins.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Diagnostics</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>development</category>
+	<category>admin</category>
+	<description>Outil de diagnostics d'Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Intégration Fichier Média (Embed)</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Permet aux utilisateurs d'envoyer facilement des fichiers médias intégrés dans les zones de textes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>file</name>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages externes (External Pages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Crée une simple page web pour les rubriques suivantes : à propos, contact, droits et confidentialités, et termes.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Fichier (File)</name>	<name>File</name>
+	<author>Core developers</author>
+	<version>1.8.1</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Plugin permettant de d'envoyer des fichiers à partager, et de les gérer</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ramasse miette sur la base de données d'elgg (Garbage Collector)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Lance des tâches de nettoyage des bases de données</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Groupes (Groups)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<category>widget</category>
+	<description>Fournit les éléments permenttant de créer des groupes sous Elgg</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Gestion des droits HTML (HTMLawed)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Fournit un filtrage sécurisé. Désactiver ce plugin est très dangeureux en terme de sécurité. NE PAS DESACTIVER.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 3</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Inviter des amis (Invite Friends)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Inviter des amis par invitation mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Avis sur le contenu "Aime ou pas" (Likes)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<description>Permet aux utilisateurs de donner leur avis sur le contenu du site (en cochant les choix "aime" ou "n'aime pas").</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Consultation journal système (Log Browser)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet la consultation du fichier journal des évènements systèmes</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Archivage du journal du système (Log Rotate)</name>
+	<author>Core developers</author>
+	<version>1.5</version>
+	<category>bundled</category>
+	<category>admin</category>
+	<description>Permet d'archiver le journal système à intervals spéficiques</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Membres (Members)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Liste des membres de votre site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Forum (Message Board)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Ce plugin permet aux utilisateurs de mettre un forum sur leur profil pour que d'autres utilisateurs envoient leurs commentaires.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Messages internes (Messages)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>communication</category>
+	<description>Gestion des messages internes dans Elgg. Ce plugin permet aux utilisateurs de s'envoyer des messages sans passer par une adresse mail.</description>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<website>http://www.elgg.org/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Notifications</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<description>Plugin d'Elgg gérant les notifications</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>API OAuth (OAuth API)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Fournit les bibliothèques OAuth et l'accès aux APIs.</description>
+	<category>bundled</category>
+	<category>api</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>oauth_lib</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Pages</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<category>widget</category>
+	<description>Elgg Pages</description>
+	<website>http://www.elgg.org</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Profil (Profile)</name>
+	<description>Plugin du profil par défaut.</description>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>social</category>
+	<website>http://elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License Version 2</license>
+	<activate_on_install>true</activate_on_install>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Signalement contenu (Reported Content)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Ajoute une option qui permet aux utilisateures de signalé un contenu, et aux administrateurs de le vérifier.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Recherche (Search)</name>
+	<author>The MITRE Corporation, Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<description>Permet la recherche l'éléments sur tous le site</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Nuage de tags (Tag Cloud)</name>
+	<author>Cash Costello</author>
+	<version>1.0</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Un Widget qui gère les nuages de tags.</description>
+	<website>http://cashcostello.com/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Microblog (The Wire)</name>
+	<author>JHU/APL and core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<description>Le Microblog sur Elgg (ou Fil), permet d'envoyer des messages courts (140 caractères) (comme Twitter...)</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>TinyMCE</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<description>Installe le plugin qui active l'éditeur TinyMCE.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter Widget</name>
+	<author>Core developers</author>
+	<version>1.7</version>
+	<category>bundled</category>
+	<category>widget</category>
+	<description>Simple widget permettant de faire du twitter</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Twitter API</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<description>Permet aux utilisateurs d'authentifier leur compte Elgg sous Twitter.</description>
+	<category>api</category>
+	<category>bundled</category>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>oauth_api</name>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+
+	<conflicts>
+		<type>plugin</type>
+		<name>twitterservice</name>
+	</conflicts>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Validation utilisateur par Mail (User Validation by Email)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>security</category>
+	<description>Validation simple d'un compte utlisateur par Mail.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Ecoute audio MP3 (Zaudio)</name>
+	<author>Core developers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>enhancement</category>
+	<category>multimedia</category>
+	<description>Ce plugin simple permet aux utilisateurs d'écouter des mp3 dans une page.</description>
+	<website>http://www.elgg.org/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>

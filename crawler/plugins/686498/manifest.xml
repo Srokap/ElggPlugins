@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Athabasca University" />
+        <field key="version" value="2.14" />
+        <field key="description" value="Widgets Eligo, meaning 'I choose' in latin, extends the edit and view functions of numerous widgets including blog, bookmarks, files of various plugins.  Check plugin requirements under Settings." />
+        <field key="website" value="http://www.elgg.org/" />
+        <field key="copyright" value="&#xA9; Athabasca University 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

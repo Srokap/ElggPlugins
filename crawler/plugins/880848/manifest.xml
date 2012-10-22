@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>iShouvik Adverts</name>
+	<author>Shouvik Mukherjee</author>
+	<version>1.8.4</version>
+	<category>enhancements</category>
+	<category>iShouvik</category>
+	<blurb>Put advert on sidebar and footer</blurb>
+	<description>
+		An easy and hassle-free way to put adverts on elgg sites
+	</description>
+	<website>http://ishouvik.com</website>
+	<copyright>(C) 2011 Shouvik Mukherjee</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2011123101</version>
+	</requires>
+
+	<screenshot>
+		<description>Plugins Page</description>
+		<path>screenshots/pluginspage.png</path>
+	</screenshot>
+	<screenshot>
+		<description>Adverts Settings</description>
+		<path>screenshots/advertssettings.png</path>
+	</screenshot>
+
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>

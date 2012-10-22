@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Anthony Channing" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Authenticate from old Elgg 0.9 Credentials" />
+	<field key="website" value="http://chantech.tv/" />
+	<field key="copyright" value="(C) Anthony Channing 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dario Agliottone" />
+        <field key="description" value="Google Friend Connect Integration" />
+        <field key="website" value="http://elgggfc.googlecode.com/" />
+        <field key="copyright" value="(C) Dario Agliottone 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009072201" />
+</plugin_manifest>

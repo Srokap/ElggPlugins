@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Jededitor/Malaga Jack." />
+       <field key="version" value="1.7.0" />
+        <field key="description" value="Play chess online." />
+        <field key="website" value="http://www.jedsite.info" />
+        <field key="copyright" value="(C)Malaga Jack" />
+	  <field key="licence" value="GNU Public License version 2" />
+	  <field key="elgg_version" value="2009030702" />
+</plugin_manifest>

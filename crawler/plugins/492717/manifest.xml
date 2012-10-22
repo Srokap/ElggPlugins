@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Dr Sanu P Moideen" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Mothers day theme for Elgg. For more elgg free and premium themes and pluggins visit www.webgalli.com" />
+	<field key="website" value="http://www.webgalli.com/" />
+	<field key="copyright" value="(C) Webgalli 2008" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009022701" />
+</plugin_manifest>

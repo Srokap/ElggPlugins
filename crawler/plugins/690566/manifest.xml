@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Florian Daniel (id.facyla.net)" />
+	<field key="version" value="0.3" />
+	<field key="description" value="Visualisateur de calendrier au format iCal (.ics) - développement soutenu par la Fing, via le programme Citélabo" />
+	<field key="website" value="http://fing.org/" />
+	<field key="copyright" value="(cc) Facyla for Fing 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Phloor Sponsor</name>
+	<author>void</author>
+	<version>1.8-11.12.06</version>
+	<category>PHLOOR</category>
+	<description>Sponsors for your Elgg site. </description>
+	<blurb>
+	Enables creating 'Sponsor' entities by administrators.
+	</blurb>
+	<website>http://phloor.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<screenshot>
+		<description>Phloor Sponsor Entities [1]</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+	
+	<screenshot>
+		<description>Phloor Sponsor Admin Interface [2]</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>
+	
+	<suggests>
+		<type>plugin</type>
+		<name>phloor_sponsor_flip_wall</name>
+		<version>1.8</version>
+	</suggests>
+
+</plugin_manifest>

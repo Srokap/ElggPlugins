@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Brian Jorgensen" />
+    <field key="version" value="1.6.1.1" />
+    <field key="description" value="Substitutes video embed code into longtext fields using Cash Costello's embedvideo library." />
+    <field key="website" value="http://www.moosetrout.com/elgg/plugins/au_longtext_video_filter" />
+    <field key="copyright" value="Copyright 2010 Brian Jorgensen" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2009072201" />
+    <field key="requires" value="embedvideo" />    
+</plugin_manifest>

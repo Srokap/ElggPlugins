@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Dr. Sanu P Moideen for Team Webgalli" />
+	<field key="version" value="1.0" />
+	<field key="description" value="CLOSE THE REGISTRATIONS FOR YOUR ELGG SITE. IF YOU ARE LOOKING FOR ELGG CUSTOMISATION/HOSTING SOLUTION VISIT US AT WWW.WEBGALLI.COM" />
+	<field key="website" value="http://www.webgalli.com/" />
+	<field key="copyright" value="(C) Webgalli 2008" />
+	<field key="licence" value="GPLV2." />
+	<field key="elgg_version" value="2009022701" />
+</plugin_manifest>

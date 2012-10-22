@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Deepak Bansal" />
+	<field key="version" value="1.5" />
+	<field key="description" value="River and wire replacement for the standard Elgg dashboard with special administration settings." />
+	<field key="website" value="http://www.trendz.tk/" />
+	<field key="copyright" value="(C) Curverider 2008-2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="1.7.11" />
+</plugin_manifest>

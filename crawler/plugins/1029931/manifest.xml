@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>galliShortUrl</name>
+	<author>Jaffer C K, Team Webgalli</author>
+	<version>1.1</version>
+	<category>enhancement</category>
+	<description>A URL Shortner input view with Goo.gl</description>
+	<website>http://www.webgalli.com/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>		
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>

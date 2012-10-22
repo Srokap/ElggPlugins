@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="ColdTrick IT Solutions" />
+        <field key="version" value="1.5.2" />
+        <field key="description" value="This plugin allows users to put a message board on their profile for other users to post comments." />
+        <field key="website" value="http://www.coldtrick.com/" />
+        <field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<!--
+
+Based on the default messageboard plugin provided by Elgg 1.5, i modified it a bit to support the entry of anonymous messages. Kinda like a guestbook. Also removed the history links. Added pagination to the 'view all' page.
+
+Plugin is still named the same so it replaces the current install of message board.
+Replace the messageboard plugin code with the code in the zip. That should do it.
+
+Version History:
+1.5.2:
+	- fixed: missing manifest
+
+-->

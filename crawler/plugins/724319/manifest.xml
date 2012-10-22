@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>RTL 1.8 ELgg Theme</name>
+	<author>Susan Tsairi stzairi@gmail.com</author>
+	<version>1.8</version>
+	<category>theme</category>
+	<blurb>Default theme for RTL languages!</blurb>
+	<description>
+		Modifies the default Elgg theme for RTL languages
+	</description>
+	<website>http://elgg18.edureshet.org.il</website>
+	<copyright>(C) 2011 Susan Tsairi</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2011032200</version>
+	</requires>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>

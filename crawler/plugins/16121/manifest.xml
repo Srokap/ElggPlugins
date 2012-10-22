@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Ivan Vergés Pasqual" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Blog extended plugin. Adds blog for groups" />
+        <field key="website" value="http://www.microstudi.com/elgg" />
+        <field key="copyright" value="(C) Ballo Microstudi SL 2008" />
+</plugin_manifest>

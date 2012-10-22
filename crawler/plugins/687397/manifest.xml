@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="CrazyMofo77" />
+	<field key="version" value="1.0" />
+	<field key="description" value="The spotlight plugin implements the views needed to override the default Spotlight text.  You just need to edit the language pack to suit your taste." />
+	<field key="website" value="http://www.manfling.net/" />
+	<field key="copyright" value="(C) CrazyMofo77 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010071002" />
+</plugin_manifest>
+
+<!--
+
+Although this plugin does cover most cases, you will probably want to go 
+over the texts and make sure they are to your taste.
+
+I modified all the Spotlights needed for my installation based on Rise_Spotlight by Rise Software
+but you may have extra plugins that create more contexts.  If so it is very easy to add a
+new spotlight context.  Just add a "pagename".php file in the views/default/spotlight
+directory with code similar to the others, and add your text in the en.php file.
+
+This plugin is meant to work with the updated xpages plugin (not the expages one).
+
+If you'd like to share your spotlight definitions, simply upload your language
+file to the Elgg.org plugins area.
+
+Peace, love and magic,
+CrazyMofo77
+
+-->

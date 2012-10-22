@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Astharoth" />
+        <field key="version" value="1.0" />
+        <field key="description" value="A Simple MP3 Widget using file uploads" />
+        <field key="website" value="http://needfulthings.blogdns.org/" />
+        <field key="copyright" value="Copyleft , Astharoth 2009" />
+</plugin_manifest>

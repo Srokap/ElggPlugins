@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="SW Social Web" />
+        <field key="version" value="2.01" />
+        <field key="description" value="Shoutcast Milocker Radio Plugin"/>
+        <field key="website" value="http://www.swsocialweb.com" />
+        <field key="copyright" value="SW Social Web LLC 2011" />
+        <field key="licence" value="License free version 2011" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<plugin_manifest>
+  <field key="author" value="José Gomes; email: juniordesiron@gmail.com" /> 
+  <field key="version" value="1.9.3" /> 
+  <field key="description" value="Provides a view counter system that may be include automatically for any entities, based on subtypes, that follow some specific elgg patterns that comes from the elgg_view_entity() function" /> 
+  <field key="published" value="17/01/2011" /> 
+  <field key="last_update" value="25/01/2011" />
+	<field key="website" value="http://www.elgg.org/" />
+	<field key="licence" value="GNU Public License version 2" /> 
+</plugin_manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>LiangLee Logo</name>
+	<author>Liang Lee</author>
+	<version>1.0.0</version>
+	<category>lianglee</category>
+	<blurb>Liang Lee Framework Core</blurb>
+	<description>Hide or Unhide topbar logo and Change Header Logo</description>
+	<website>http://community.elgg.org/pg/profile/arsalanlee</website>
+	<copyright>See COPYRIGHT.TXT</copyright>
+	<license>GNU Public License version 2</license>
+	<screenshot>
+		<description>Settings Page</description>
+		<path>preview/LiangLeeLogo.jpg</path>
+	</screenshot>
+	<screenshot>
+		<description>Home Page</description>
+		<path>preview/LiangLeeLogoView.jpg</path>
+	</screenshot>
+      <requires>
+        <type>plugin</type>
+        <name>LiangleeFramework</name>
+        <version>1.1.2</version>
+       </requires>
+	<requires>
+		<type>elgg_version</type>
+		<version>2012041801</version>
+	</requires>
+	<admin_interface>simple</admin_interface>
+	<activate_on_install>false</activate_on_install>
+</plugin_manifest>

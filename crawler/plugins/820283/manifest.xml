@@ -1,0 +1,14 @@
+<?xml version="1.2" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>PHP Free Chat</name>
+	<author>imoni</author>
+	<version>1.1</version>
+	<description>Elgg Integration of the nice ajax chat PhpFreeChat 1.3. You can make chatrooms from settings.</description>
+	<website>http://www.phpfreechat.net/</website>
+	<license>GNU Public License version 3</license>
+	
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>

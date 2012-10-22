@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Cim" />
+        <field key="version" value="0.1" />
+        <field key="description" value="This is basically a widget where people can add other text, images, etc. with html enabled (some security measures enabled too ;]) " />
+        <field key="website" value="http://demyx.com" />
+        <field key="copyright" value="(C) DEMYX 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

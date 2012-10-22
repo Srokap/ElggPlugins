@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Darkeo</name>
+	<author>Thomas - Arweb</author>
+	<version>2011.12.10</version>
+	<category>theme</category>
+	<description>Elgg template</description>
+	<website>http://www.arweb.fr</website>
+	<copyright>(C) Thomas - arweb.fr 2011</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>

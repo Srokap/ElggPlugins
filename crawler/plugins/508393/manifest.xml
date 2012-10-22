@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Casey (P.Casey)" />
+        <field key="version" value="0.1" />
+        <field key="description" value="FrameMe places a normal web link in an iframe inside your Elgg installation." />
+        <field key="copyright" value="(c) 2010 Thought Police Interactive Fiction" />
+        <field key="website" value="http://arthurslegacy.com" />
+        <field key="licence" value="GNU General Public License version 3" />
+</plugin_manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="version" value="1.0" />
+        <field key="description" value="Elgg gpg plugin. This plugin lets users manage their gpg public key and encrypt messages or receive them encrypted." />
+        <field key="website" value="http://bitbucket.org/rhizomatik/elggpg/" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="1.7" />
+</plugin_manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest  xmlns="http://www.elgg.org/plugin_manifest/1.8">
+       	<name>Friends Online</name>
+		<author>Dieter Konrad</author>
+		<version>2.0</version>	
+		<category>Friends</category>
+		<description>	Shows friends online, by alfalive </description>	
+		<website>http://community.elgg.org/pg/profile/alfalive</website>	
+		<copyright>(C) Dieter Konrad 2010</copyright>	
+		<license>GNU Public License version 2</license>	
+		<requires>		
+		<type>elgg_version</type>		
+		<version>2010030101</version>	
+		</requires>		
+		<admin_interface>simple</admin_interface>
+</plugin_manifest>

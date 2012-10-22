@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="1.6.1" />
+	<field key="description" value="Send personalized messages to (all) site users" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<!-- 
+
+====================
+Version History:
+====================
+1.6.1:
+	- changed: progress window data based on json
+	- fixed: Elgg 1.7 security requirements
+
+1.6:
+	- added: support to override delivery method (email, site, userpreference)
+	
+1.5:
+	- changed: progress window
+	- changed: no longer using GET but POST instead, can give longer texts
+
+1.3:
+	- Sending now from a new window
+	- Sending progress indicator
+	- Small translation changes
+
+1.1.1:
+	- Fixed test setup in send.php (thanks Johno)
+
+1.1:
+	- Fixed text error in translation file ([profile] instead of [profilepage])
+	- Cleaned up the text to be send some further
+
+1.0:
+	- First version based on original work from Brucepro
+	- Redid some coding for cleanup
+	- Now using Elgg mailfunction, not is own
+
+====================================================================
+TO DO:
+- Send mail using cron
+
+====================================================================
+Known Issue:
+- Slow with many users (for mail)
+
+-->

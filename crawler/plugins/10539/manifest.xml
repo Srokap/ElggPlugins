@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin_manifest>
+
+  <field key="author" value="Tomas Feltl" />
+
+  <field key="version" value="0.1beta" />
+
+  <field key="description" value="Adds an option under the administrator screen to view the group summary, delete group, add users to group." />
+
+  <field key="website" value="http://www.tfsoft.cz/" />
+
+  <field key="copyright" value="(C) TFSoft 2008" />
+
+  <field key="licence" value="GNU Public License version 2" />
+
+</plugin_manifest>
+

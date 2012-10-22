@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+		<field key="elgg_version" value="2009031301" />
+        <field key="author" value="Miguel Montes, mmontesp@gmail.com" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Autocomplete tags for ELGG, based on jquery autocomplete plugin (Copyright (c) 2007 Dylan Verheul, Dan G. Switzer, Anjesh Tuladhar, Jörn Zaefferer)" />
+        <field key="website" value="http://mimopo.es" />
+		<field key="licence" value="GNU Public License version 2" />
+        <field key="copyright" value="(c) Miguel Montes Porras 2009" />
+</plugin_manifest>

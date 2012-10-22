@@ -1,0 +1,6 @@
+<plugin_manifest>
+        <field key="author" value="Steve Suppe based on work by 'Franci'" />
+        <field key="version" value="1.0.2" />
+        <field key="description" value="Friend Requests with approvals, denies, etc" />
+        <field key="copyright" value="(C) 2008 'Franci', Modifications (C) 2008 Steve Suppe, Released under GPL2.0" />
+</plugin_manifest>

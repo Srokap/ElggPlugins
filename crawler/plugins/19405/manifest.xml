@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Sergio De Falco aka SGr33n <sgr33n@ircaserta.com" />
+        <field key="version" value="0.1" />
+        <field key="description" value="LastFm Last Songs" />
+        <field key="website" value="http://www.ircaserta.com" />
+        <field key="copyright" value="Sergio De Falco aka SGr33n 2009" />
+</plugin_manifest>

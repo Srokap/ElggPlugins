@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Sammy Kanan" />
+        <field key="version" value="0.1" />
+        <field key="description" value="View enhancements" />
+        <field key="website" value="http://www.hedgehogs.net" />
+        <field key="copyright" value="&#xA9; HedgeHogs" />
+        <field key="licence" value="GNU Public License version 2" />      
+</plugin_manifest>

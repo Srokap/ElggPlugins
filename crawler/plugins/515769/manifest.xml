@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Kevin Jardine &lt;kevin@radagast.biz&gt;" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Sends queued messages" />
+	<field key="website" value="http://radagast.biz" ></field>
+	<field key="copyright" value="(C) Radagast Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" ></field>
+	<field key="elgg_version" value="2009041701" />
+</plugin_manifest>

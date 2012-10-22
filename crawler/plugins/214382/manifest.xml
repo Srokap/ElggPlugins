@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Gilberto Pineda - Laboratorios Web" />
+	<field key="version" value="0.2" />
+	<field key="description" value="Crossial theme" />
+	<field key="website" value="http://www.laboratoriosweb.com/" />
+	<field key="copyright" value="(C) LaboratoriosWeb.com 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

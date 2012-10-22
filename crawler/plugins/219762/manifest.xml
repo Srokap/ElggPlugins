@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Cash Costello and B. Schwarz" />
+        <field key="version" value="0.3.0" />
+        <field key="description" value="Adds help interface" />
+        <field key="copyright" value="Cash Costello and B. Schwarz 2009" />
+        <field key="licence" value="GNU General Public License version 2" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>

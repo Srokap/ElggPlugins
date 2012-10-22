@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Network Tools</name>
+	<author>Luny</author>
+	<version>1.8</version>
+	<description>Networking tools plugin. Md5 hash generator, whois lookup, traceroute, hostname resolver.</description>
+ <website>http://www.everyonehates.me</website>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>

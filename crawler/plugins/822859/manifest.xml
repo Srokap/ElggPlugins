@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Bug Fix It" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Disables User Registration | Elgg 1.7.14" />
+	<field key="website" value="http://www.bugfixit.com/" />
+	<field key="copyright" value="Bug Fix It © 2011" />
+	<field key="licence" value="GPLV2." />
+	<field key="elgg_version" value="2011052801" />
+</plugin_manifest>

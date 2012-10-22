@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Boris Glumpler" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Custom index page" />
+	<field key="website" value="http://travel-junkie.com/" />
+	<field key="copyright" value="(C) Travel-Junkie.com 2008" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

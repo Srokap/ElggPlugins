@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Tom Rice" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Automatically makes everyone a friend with everyone." />
+        <field key="website" value="http://www.brwebconsulting.co.uk/" />
+        <field key="copyright" value="Based on 'Be Tom' by Zac (http://www.addicted2kicks.com/devblog/) (C) Zac 2008" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Florian Daniel" />
+        <field key="version" value="0.3.2 - 2011.06.06" />
+        <field key="description" value="HTML mailing tool / Envoi de mails HTML (newsletter, mailings divers, etc.)" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="copyright" value="Facyla 2011" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>
+
+<!--
+TODO :
+- use better system for large mailings
+- use cron
+- choose templates
+
+
+0.3.2 : 20110621
+  - only fetch activated and valid emails (banned & inactive accounts are not filtered)
+
+0.3.1 : 20110606
+
+0.3 : 20110531
+  - admin settings : title, message, custom sender mail
+  - allow localadmins or not (multisite only feature)
+  - handle large mail volume (requires set_time_limit())
+  - many other changes
+
+0.2 : 20110529
+  - plugin anonymized
+
+0.1 : 2010.10.30
+  - initial release
+
+//-->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin_manifest>
+
+    <field key="author" value="Fusion" />
+
+    <field key="version" value="0.2" />
+
+    <field key="description" value="registration page" />
+
+    <field key="website" value="http://www.mypaintersplace.com" />
+
+    <field key="copyright" value="(C) mypaintersplac.com 2010" />
+
+    <field key="licence" value="GNU Public License version 2" />
+
+    <field key="elgg_version" value="2009030702" />    
+
+</plugin_manifest>
+

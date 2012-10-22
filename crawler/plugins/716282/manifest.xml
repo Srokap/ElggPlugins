@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="CSI/SocialWeb" />
+		<field key="version" value="1.1" />
+        <field key="description" value="xuum Theme by CSI/SocialWeb" />
+    	<field key="website" value="http://www.milocker.com/socialweb" />
+		<field key="licence" value="GNU Public License version 2" />
+			
+</plugin_manifest>

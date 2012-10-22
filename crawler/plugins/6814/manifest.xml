@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Stephen J. O'Connor" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Plugin to override default language/en.php file" />
+	<field key="website" value="http://openedweb.com/" />
+	<field key="copyright" value="(C) Stephen J. O'Connor 2008" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

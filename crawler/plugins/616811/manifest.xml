@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Mike Jones" />
+  <field key="version" value="2.0" />
+  <field key="description" value="Adds a quote of the day/week/month feature. Users can submit their own quotes and rate other user's submitted quotes. Each day/week/month (admin can choose) the quote with the highest rating will be featured." />
+  <field key="website" value="http://www.facebake.com/" />
+  <field key="copyright" value="(C) Mike Jones 2010" />
+  <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Matthew Gibbons" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Colleagues (as opposed to friends)" />
+        <field key="website" value="http://taose.co.uk/" />
+        <field key="copyright" value="2008 TAOSE Limited" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Alex Hokanson" />
+        <field key="version" value="1.1" />
+        <field key="description" value="Elgg multiple profile plugin extended off of the original profile plugin." />
+        <field key="website" value="http://www.elgg.org/" />
+        <field key="copyright" value="(C) Visionary Web 2011" />
+		<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

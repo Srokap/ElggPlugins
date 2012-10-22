@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Adam Endvy" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Raty Rate Plugin 0.1" />
+        <field key="website" value="http://www.codegero.com" />
+		<field key="licence" value="GNU Public License version 2" />
+        <field key="copyright" value="(c) Adam Endvy 2011" />
+</plugin_manifest>

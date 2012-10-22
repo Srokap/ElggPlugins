@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Location Autocomplete</name>
+	<author>Web Intelligence</author>
+	<version>1.1</version>
+	<description>Uses Google Maps V3 API to suggests locations for user as they type. Compatible with profile manager</description>
+	<website>http://www.webintelligence.ie/</website>
+	<copyright>(C) Web Intelligence</copyright>
+	<license>GNU General Public License version 2</license>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<category>communication</category>
+
+</plugin_manifest>

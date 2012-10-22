@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT / PerfectMedium" />
+	<field key="version" value="1.3.5" />
+	<field key="description" value="Customize the Group layout" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!-- 
+
+====================
+Version history
+====================
+
+1.3.5   - fixed: changed 'add content' links to correctly check for write access for current page viewer.
+	- changed: CSS assignment class for widget footers.
+
+1.3.4	- fixed: free HTML widget now correctly scans input text for tag validity.
+	- fixed: free HTML widget had logic bug when saving/editing content.
+	- fixed: changed spelling of 2 entries in language file (en)
+	- fixed: some other 'add new content' links were not pointing to the correct pages.
+
+1.3.3	- fixed: some 'add new content' links were not pointing to the correct pages when no content was available for the widgets.
+
+1.3.2   - changed: moved 'no content found' messages to box content area, from footers.
+        - added: 'add new content' links to each widget for logged in visitors
+
+1.3.1	- fixed: format for discussion widget to ensure 'view all' link appears once only.
+	- changed: 'view more' URLs for files and bookmarks widget are updated for 1.7.5 - including version check for backwards compatibility.
+
+1.3     - added: support for event calendar - fixed references to already existing code
+        - changed: moved blog widget code to group_custom_layout to support standard CSS
+
+1.2.9   - changed: CSS hierarchy of background for group field text
+
+1.2.8   - fixed: notification text messages
+
+1.2.7	- fixed: CSS bugs
+	- added: color pickers for widget footers and links
+
+1.2.6   - changed: set default of header/field color flags to be 'no'
+	- changed: standardised CSS classes across main widgets
+	- added: support for webgalli_gmessageboard widget
+
+1.2.5   - fixed: removed debug code
+
+1.2.4:  - added: files widget
+        - added: flags for 'set header background color' and 'set fields background color'. 
+        - fixed: 'more pages' link on pages widget
+
+1.2.3:  - added: group bookmarks widget
+        - fixed: background images
+
+1.2.2:  - added: 2nd background image option
+
+1.2:    - added: group river widget
+
+1.1:
+	- added: option to disable/enable custom colors
+	- added: option to disable/enable custom background
+	- changed: placement of some javascript
+	- fixed: Groups widgets not dragging in Elgg 1.6
+
+1.0.2:
+	- fixed: group discussion links now correct
+	- changed: css now for default Elgg Theme
+	
+1.0.1:
+	- fixed: ie bug dragging of widgets
+	- fixed: tooltip on configured widgets
+	- changed: default option of background image and colors set to 'no'
+	- changed: views/default/group_custom_layout/group/css.php to support trotsvanhetzuiden.com css
+1.0:
+	- Initial release
+	
+-->

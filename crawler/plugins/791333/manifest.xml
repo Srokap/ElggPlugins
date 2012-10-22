@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Mohammed Aqeel | Team Webgalli" />
+        <field key="version" value="1.7.10" />
+        <field key="description" value="Elgg - Wordpress bridge (Topbar component)" />
+        <field key="website" value="http://webgalli.com/" />
+        <field key="copyright" value="(C) Team Webgalli 2008-2010" />
+        <field key="licence" value="GNU2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

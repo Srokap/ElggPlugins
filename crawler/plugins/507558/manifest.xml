@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Zac Hopkinson, Steve Clay" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Maintains a friendship between a designated user and every other site user. Like Tom on MySpace." />
+        <field key="website" value="http://www.addicted2kicks.com/devblog/" />
+        <field key="copyright" value="(C) Zac 2008" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

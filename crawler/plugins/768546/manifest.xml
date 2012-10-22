@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Trajan LiHai Learning" />
+        <field key="version" value="0.1beta" />
+        <field key="description" value="Provides more control over river items" />
+        <field key="website" value="www.threecents.org" />
+        <field key="copyright" value="(C) LiHai Learning 2011" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

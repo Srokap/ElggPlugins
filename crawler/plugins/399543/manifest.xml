@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="l'alkimiste" />
+	<field key="version" value="1.0" />
+	<field key="description" value="This will add a englishlevel test to your site" />
+	<field key="website" value="me2all" />
+ 
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="quote" value="ta7ya falastine" />
+	<field key="elgg_version" value="1.1.6" />
+</plugin_manifest>

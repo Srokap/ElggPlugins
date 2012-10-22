@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Marcus Povey" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Example URL shortener support using 3la.cc." />
+	<field key="website" value="http://3la.cc" />
+	<field key="copyright" value="Marcus Povey 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009051401" />
+</plugin_manifest>

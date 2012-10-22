@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Cerceau, renato" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Gera espaço com informações iniciais para os novos usuários aprenderem a utilizar a rede social (adaptado dos plugins 'tips' e 'cicero')" />
+        <field key="website" value="http://www.assetans.org.br/redesocial" />
+        <field key="copyright" value="(C) cerceau 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+
+</plugin_manifest>

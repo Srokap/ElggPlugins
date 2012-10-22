@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Yann Sallou (klermor) + Facyla" />
+    <field key="version" value="0.2" />
+    <field key="description" value="Anonymous Comments" />
+    <field key="website" value="http://carnets.parisdescartes.fr" />
+    <field key="copyright" value="(C) University of Paris Descartes 2010" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2009030702" />    
+</plugin_manifest>

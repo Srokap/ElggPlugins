@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="1.1" />
+	<field key="description" value="Ability to transfer group admins" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010040201" />
+</plugin_manifest>
+<!-- 
+
+=========================
+Features
+=========================
+
+This allows people to transfer ownership of groups to their friends.
+You can find the transfer option in the edit window of a group. 
+You can only transfer to your friends, and they will automatically become a member of the group (duh).
+Plugin setting allow you to choose who can transfer ownership (siteadmin and groupadmin)
+
+=========================
+Version Information
+=========================
+1.1 (2010-11-02):
+	- added: option to transfer to group members
+	- added: option to transfer te yourself (admin only)
+	- added: compatibility with Elgg 1.7.x
+	- changed: layout to better display to what user your're transfering ownership
+	- removed: compatibility with Elgg < 1.7.x
+
+1.0.1:
+	- fixed: icons not correctly copied when no group icon is uploaded
+	- fixed: transfering ownership not working correctly in Elgg 1.7 (token error)
+	
+1.0:
+	- added: option to select who can transfer (every admin or siteadmin only)
+	- fixed: losing the group icon when transfering
+0.1:
+	- first release
+
+-->

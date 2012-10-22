@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Michał Zacher" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Auto subscribe members to groups, pages and files." />
+	<field key="website" value="http://www.elggdev.com/" />
+	<field key="copyright" value="(C) Elggdev 2008" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

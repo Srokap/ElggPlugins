@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="1.2" />
+	<field key="description" value="Tracks searches and enables display of search tagcloud" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>
+<!-- 
+
+Tracks search keywords and shows the 25 most popular keywords in the searchresult page.
+
+You can also use the elgg_view('searchcloud/default') anywhere else on your site. Default the top 10 keywords are returned. If you like more, pass the variable 'searchcloudlimit'.
+
+The site-admin has the ability to reset the cloud in the plugin-settings.
+
+Version History
+1.2
+	- fixed: showing tagcloud twice on pages plugin
+1.1
+	- fixed: only first 10 keywords were listed
+-->

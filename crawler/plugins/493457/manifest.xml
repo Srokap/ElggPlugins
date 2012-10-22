@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Simone Congiu" />
+	<field key="version" value="1.3" />
+	<field key="description" value="Free games catalog. A total of 6000 Games for free play. PC, Mac and online versions in five languages. Enjoy!" />
+	<field key="website" value="http://lucygames.com/?ref=elgg_plugin" />
+	<field key="copyright" value="(C) Simone Congiu" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Khaled Afiouni" />
+        <field key="version" value="1.1" />
+        <field key="description" value="Displays an elgg login box only without other page elements. Useful for displaying a login form in a subfolder or on a page in an external site or even a local file :)&lt;br /&gt;&lt;br /&gt;Upon logout, this plugin will also redirect the user to the page where the user originally did login.&lt;br /&gt;&lt;br /&gt;To use this plugin, simply add the following anywhere in a page to display the login box at this location:&lt;br /&gt;&lt;pre&gt;&amp;lt;script src=&quot;http://example.com/pg/remotelogin/load.js&quot; type=&quot;text/javascript&quot; &gt;&amp;lt;/script&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;If you would like to add scripts to your html header or would like to style the box differently, following are the different scripts and styles that this plugin loads for the login box to work properly. Therefore, you can replace the stylesheet with your own or remove the jQuery loading if it is already loaded in your page.&lt;br /&gt;&lt;pre&gt;&amp;lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot; type=&quot;text/javascript&quot; &gt;&amp;lt;/script&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;script src=&quot;http://example.com/pg/remotelogin/remoteajax.js&quot; type=&quot;text/javascript&quot; &gt;&amp;lt;/script&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://example.com/pg/remotelogin/style.css&quot; type=&quot;text/css&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;&amp;lt;div id=&quot;remotelogin&quot;&gt;&amp;lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;script src=&quot;http://example.com/pg/remotelogin/run.js&quot; type=&quot;text/javascript&quot; &gt;&amp;lt;/script&gt;&lt;/pre&gt;&lt;br /&gt;" />
+        <field key="website" value="http://skinju.com/" />
+        <field key="copyright" value="(C) skinju.com 2010" />
+        <field key="licence" value="Released under the GPL license (http://www.opensource.org/licenses/gpl-license.php)" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

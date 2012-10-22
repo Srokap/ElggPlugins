@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Wavemobi.com" />
+        <field key="version" value="1.01" />
+        <field key="description" value="Music for Elgg free version no download buy the full version to provide free downloads to your visitors!"/>
+        <field key="website" value="http://www.wavemobi.com" />
+        <field key="copyright" value="Wavemobi.com 2011" />
+        <field key="licence" value="License free version 2011" />
+        <field key="elgg_version" value="2010071002" />
+</plugin_manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Facyla after Klermor, ColdTrick, Cubet" />
+        <field key="version" value="2.2" />
+        <field key="description" value="Customized search plugin, added full text search (Original by Cubet Technologies)" />
+        <field key="website" value="http://carnets.parisdescartes.fr/" />
+        <field key="copyright" value="(C) ColdTrick IT Solutions 2009 / Université Paris descartes 2010 / Facyla 2011" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+<!-- 
+======================
+INSTALLATION
+======================
+- Place in mod directory
+- Enable plugin
+- edit {document_root}/search/index.php
+	- comment out line 63 to 84
+	- insert 'trigger_plugin_hook('search','',$tag,"");' below the comment block you just created
+OR
+- edit {document_root}/search/index.php
+  - insert right after require_once line : if (is_plugin_enabled('customsearch')) { trigger_plugin_hook('search','','',""); exit; }
+
+======================
+Version History
+======================
+
+2.2 (2011-03-25):
+  - many small changes & bug corrections
+
+2.1 (2011-03-22 - Facyla):
+	- added normal (tag) results
+	- added local/multisite search config parameter
+	- added search form
+	- added search page handler
+	- included menu generation, with subtypes counter
+
+2.0.1 (2010-03-19 - Klermor):
+	- fixed: SQL injection possibility (thanks to Paul Dragoonis)
+
+2.0: (Coldtrick)
+	- code cleanup
+	- now works with all (registered) subtypes
+	- removed unused files
+
+1.5:
+	- original version by Cubet Technologies
+-->
+
+

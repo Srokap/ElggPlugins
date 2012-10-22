@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="smscoin.com" />
+	<field key="version" value="1.5" />
+	<field key="description" value="Simple user account validation via email and sms." />
+	<field key="website" value="http://smscoin.com/" />
+	<field key="copyright" value="(C) http://smscoin.com/ 2009" />
+	<field key="licence" value="smscoin.com License" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

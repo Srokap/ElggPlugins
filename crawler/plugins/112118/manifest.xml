@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Hi Tech Revolution Designs" />
+	<field key="version" value="1.2" />
+	<field key="description" value="Hi Tech Dark Theme" />
+	<field key="website" value="http://www.revolutionteam.info" />
+	<field key="copyright" value="(C) MzStudios 2008-2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

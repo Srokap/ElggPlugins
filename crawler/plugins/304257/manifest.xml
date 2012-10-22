@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="François-Xavier NION" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Permit to hide profile_fields beginning by the suffix admin_ when editing profile. Only admin can edit thes fields" />
+	<field key="website" value="http://fxnion.free.fr/" />
+	<field key="copyright" value="(C) Fx NION 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg-version" value="2009030101" />
+</plugin_manifest>

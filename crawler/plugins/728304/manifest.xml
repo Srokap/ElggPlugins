@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Elggdev.com" />
+        <field key="version" value="1.5" />
+        <field key="description" value="Let users confirm friend requests. Make all friend requests reciprocal." />
+        <field key="website" value="http://www.elggdev.com" />
+        <field key="copyright" value="(C) Elggdev 2011" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

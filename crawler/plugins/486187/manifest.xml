@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="Brian Jorgensen" />
+    <field key="version" value="1.6.1.1" />
+    <field key="description" value="Users can add collection and group tabs to their activity tool." />
+    <field key="website" value="http://www.moosetrout.com/elgg/plugins/mt_activity_tabs" />
+    <field key="copyright" value="Copyright 2010 Brian Jorgensen" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2009072201" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Pedro aka maslinux" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Facebook inside a window in our Elgg site" />
+        <field key="copyright" value="Pedro aka maslinux" />
+        <field key="website" value="http://tuxeamesocial.es/" />
+        <field key="licence" value="GNU General Public License version 3" />
+        <field key="elgg_version" value="0" />
+</plugin_manifest>

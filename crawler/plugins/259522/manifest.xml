@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="midkniht midkniht@midkniht.com" />
+        <field key="version" value="1.0" />
+        <field key="description" value="This is a profile widget for qik.com. " />
+        <field key="website" value="http://duuit.com/" />
+        <field key="copyright" value="(C) Duuit! 2009" />
+	<field key="licence" value="GNU Public License version 3" />
+</plugin_manifest>

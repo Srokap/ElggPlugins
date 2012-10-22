@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Miguel Rodríguez Pérez" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Replaces standard calendar plugin" />
+	<field key="website" value="http://lared.det.uvigo.es" />
+        <field key="copyright" value="© Copyright Laboratorio de Redes 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010012901" />
+</plugin_manifest>

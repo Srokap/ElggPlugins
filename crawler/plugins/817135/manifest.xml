@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Phloor Frontgroup</name>
+	<author>void</author>
+	<version>11.11.16</version>
+	<category>PHLOOR</category>
+	<description>
+Define a frontgroup for your Elgg installation. 
+Prevents ordinary users, that are not members of any frontgroup, from posting public stuff -
+they can only set their read access to 'private', 'loggedin' or 'group:...' but not 'public'. 
+	</description>
+	<blurb>
+This plugins lets administrators set groups as "Frontgroup".
+Only user which are members of a frontgroup are able to post 
+public stuff. For every other user the creation of object with 
+access level 'public' is prohibited - thus they can only choose
+between 'pivate', 'loggedin' or the groups ('group: [name]').
+
+Please note, that a group has to be OPEN so that guest can see
+their public content. If you are concerned about people just joining
+this groups you can calm down: Although frontgroups may be 'Open', users
+can only join if they got an invitation.
+	</blurb>
+	<website>http://www.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<requires>	
+		<type>plugin</type>
+		<name>groups</name>
+		<version>1.8</version>
+	</requires>
+	
+	<screenshot>
+		<description>Phloor Frontgroup - Group Settings [0]</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+	
+	<screenshot>
+		<description>Phloor Frontgroup - Admin Interface [1]</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>
+			
+</plugin_manifest>

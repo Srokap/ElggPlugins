@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dipak C. Gajjar (Email: dipak2711@yahoo.co.uk)" />
+        <field key="version" value="1.7.1.1" />
+        <field key="description" value="Updated version 1.1 of 'Mood plugin for 1.7.1'" />
+        <field key="website" value="http://www.infowaywebsolutions.com" />
+        <field key="copyright" value="(C) Dipak C. Gajjar # Original file credits to: Benjamin Graham-Duuit!" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

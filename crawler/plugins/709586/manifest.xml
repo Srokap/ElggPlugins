@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Marek Lompart" />
+        <field key="version" value="1.00" />
+        <field key="description" value="Custom iframe widget" />
+</plugin_manifest>

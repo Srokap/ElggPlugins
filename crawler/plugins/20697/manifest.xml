@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+<field key="author" value="Curverider (editions by Sam Rowley, Ray Reid), munkee (version 1.01), C4LPT (version 1.02 by Philip Hart)" />
+<field key="version" value="1.02" />
+<field key="description" value="A super simple personal RSS reader with delete functionality" />
+<field key="website" value="http://www.elgg.org/" />
+<field key="copyright" value="(C) Curverider 2008" />
+<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

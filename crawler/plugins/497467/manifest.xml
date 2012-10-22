@@ -1,0 +1,9 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Torsten Wesolek	" />
+	<field key="version" value="1.6" />
+	<field key="description" value="Shows a counter of downloads for files" />
+	<field key="website" value="http://www.community-software-24.com/" />
+	<field key="copyright" value="(c) Torsten Wesolek 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

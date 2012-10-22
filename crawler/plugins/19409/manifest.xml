@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Sammy Kanan, Shuffling of tags by Karsten Schulze 2009" />
+        <field key="version" value="1.0" />
+        <field key="description" value="This plugin lets users view a tag cloud." />
+        <field key="website" value="" />
+        <field key="copyright" value="" />
+</plugin_manifest>

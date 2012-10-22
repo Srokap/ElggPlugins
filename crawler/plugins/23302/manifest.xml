@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Pedro Prez" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Browse People you might know" />
+	<field key="website" value="http://pedroprez.com.ar/" />
+	<field key="copyright" value="(C) Pedro Prez 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

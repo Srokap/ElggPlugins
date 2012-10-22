@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin_manifest>
+        
+<field key="author" value="Prashant Juvekar" />
+        
+<field key="version" value="0.3" />
+        
+<field key="description" value="" />
+        
+<field key="website" value="http://www.socialtrak.com/" />
+        
+<field key="copyright" value="(C) SocialTrak 2009" />
+        
+<field key="licence" value="GNU Public License version 2" />
+
+</plugin_manifest>

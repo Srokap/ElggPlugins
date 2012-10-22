@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="BrainMedia" />
+	<field key="version" value="1.2.1" />
+	<field key="description" value="XML-RPC Co-Registration" />
+	<field key="website" value="http://www.BrainDash.com/" />
+	<field key="copyright" value="(C) BrainMedia Ltd 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

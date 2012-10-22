@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dr Sanu P Moideen for Team Webgalli" />
+        <field key="version" value="2.0" />
+        <field key="description" value="Mass mailout pluggin for Elgg. Looking for Elgg Plugins/themes/hosting/support? Visit webgalli.com" />
+        <field key="website" value="http://www.webgalli.com/" />
+        <field key="copyright" value="(C) Dr Sanu P Moideen / Team Webgalli 2008-2015" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010030101" />
+</plugin_manifest>

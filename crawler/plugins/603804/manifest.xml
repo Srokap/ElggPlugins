@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT / PerfectMedium" />
+	<field key="version" value="1.2.3" />
+	<field key="description" value="Customize the Group layout" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+<!-- 
+
+====================
+Version history
+====================
+1.2.3:  - added: group bookmarks widget
+        - fixed: background images
+
+1.2.2:  - added: 2nd background image option
+
+1.2:    - added: group river widget
+
+1.1:
+	- added: option to disable/enable custom colors
+	- added: option to disable/enable custom background
+	- changed: placement of some javascript
+	- fixed: Groups widgets not dragging in Elgg 1.6
+
+1.0.2:
+	- fixed: group discussion links now correct
+	- changed: css now for default Elgg Theme
+	
+1.0.1:
+	- fixed: ie bug dragging of widgets
+	- fixed: tooltip on configured widgets
+	- changed: default option of background image and colors set to 'no'
+	- changed: views/default/group_custom_layout/group/css.php to support trotsvanhetzuiden.com css
+1.0:
+	- Initial release
+	
+-->

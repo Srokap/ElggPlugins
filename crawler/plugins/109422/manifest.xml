@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Miguelon" />
+        <field key="version" value="1.2" />
+        <field key="description" value="MSN Me Widget" />
+        <field key="website" value="http://community.elgg.org/pg/plugins/Miguelons" />
+        <field key="copyright" value="GNU General Public License (GPL) version 3" />
+		<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

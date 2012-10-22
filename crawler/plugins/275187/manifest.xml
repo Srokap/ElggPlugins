@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Mark Beachill" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Horixontal Navigation with Highlighting - FRAMEWORK" />
+	<field key="website" value="NA" />
+	<field key="copyright" value="Open" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

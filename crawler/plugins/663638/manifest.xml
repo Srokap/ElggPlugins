@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="M.R.A. Welkers" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Enables LinkedIn integration in supported plugins." />
+	<field key="website" value="http://www.fautloos.nl/" />
+	<field key="copyright" value="(C) M.R.A. Welkers 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010071002" />
+</plugin_manifest>

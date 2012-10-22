@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Michael Nixon" />
+        <field key="website" value="None" />
+        <field key="description" value="Automatically adds all current Admins to a newly created or edited group." />
+        <field key="version" value="1.1" />
+        <field key="copyright" value="(c) Michael Nixon, 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2010040201" />
+</plugin_manifest>

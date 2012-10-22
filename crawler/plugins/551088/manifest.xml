@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Lorea.org &lt;invi@riseup.net&gt;" />
+        <field key="version" value="f-0.82" />
+        <field key="description" value="Elgg full calendar plugin" />
+        <field key="website" value="https://lorea.org" />
+        <field key="copyright" value="(C) Rhizomatik Labs" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009030101" />
+</plugin_manifest>

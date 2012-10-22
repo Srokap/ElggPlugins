@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<plugin_manifest>
+  <field key="author" value="José Gomes; email: juniordesiron@gmail.com" /> 
+  <field key="version" value="1.00" /> 
+  <field key="description" value="Provides a tab navigator view using the tabber javascript plugin" /> 
+  <field key="published" value="16/10/2010" /> 
+  <field key="last_update" value="16/10/2010" />
+	<field key="website" value="http://www.elgg.org/" />
+	<field key="licence" value="GNU Public License version 2" /> 
+</plugin_manifest>

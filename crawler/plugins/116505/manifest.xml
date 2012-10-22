@@ -1,0 +1,11 @@
+<?xml version="1.0b1" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Brett Profitt" />
+	<field key="version" value="1.0" />
+	<field key="description" value="Gives users demerits and allows for temporary bans." />
+	<field key="website" value="http://www.eschoolconsultants.com" />
+	<field key="copyright" value="(C) Brett Profitt 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+	<field key="recommends" value="expirationdate" />
+</plugin_manifest>

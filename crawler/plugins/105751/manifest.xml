@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Chris Hide" />
+	<field key="version" value="0.2" />
+	<field key="description" value="Basic Link Plugin 0.2: This plugin adds a basic link to the tools menu." />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="copyright" value="(c) Chris Hide" />
+	<field key="website" value="http://community.elgg.org/pg/profile/chrishide87" />
+</plugin_manifest>

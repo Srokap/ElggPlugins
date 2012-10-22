@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Dr Sanu P Moideen" />
+        <field key="version" value="1.6" />
+        <field key="description" value="Elgg Audio plugin, Looking for any support/pluggin/theme/hosting support for elgg? Visit www.webgalli.com" />
+        <field key="website" value="http://www.webgalli.com/" />
+        <field key="copyright" value="(C) Dr Sanu P Moideen @ Team Webgalli 2008-2009" />
+        <field key="licence" value="Commercial" />
+        <field key="elgg_version" value="2009061701" />
+</plugin_manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Facyla" />
+  <field key="version" value="0.1" />
+  <field key="description" value="Fil d'Ariane / Breadcrumb trail" />
+  <field key="website" value="http://www.formavia.fr/" />
+  <field key="copyright" value="(CC) FormaVia 2010" />
+  <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="team elggzone" />
+    <field key="version" value="2012.01.22" />
+    <field key="description" value="A free elggzone theme" />
+    <field key="website" value="http://www.perjensen-online.dk" />
+    <field key="copyright" value="(C) Per Jensen - perjensen-online.dk 2012" />
+    <field key="licence" value="GNU Public License version 2" />
+    <field key="elgg_version" value="2011052801" />    
+</plugin_manifest>

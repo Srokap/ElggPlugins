@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Florian Daniel" />
+        <field key="version" value="0.3 - 2010.10.26" />
+        <field key="description" value="Improved notifications (subject and content)" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="licence" value="CC-BY-NC 2.0 http://creativecommons.org/licenses/by-nc/2.0/" />
+        <field key="copyright" value="Facyla 2010" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>

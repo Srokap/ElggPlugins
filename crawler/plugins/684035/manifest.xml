@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<plugin_manifest>
+  <field key="author" value="José Gomes; email: juniordesiron@gmail.com" /> 
+  <field key="version" value="2.0.0" /> 
+  <field key="description" value="The rate entities plugins provides a view that can be used to rate any elgg entity." /> 
+  <field key="published" value="18/07/2010" /> 
+  <field key="last_update" value="30/11/2010" />
+	<field key="website" value="http://www.elgg.org/" />
+	<field key="licence" value="GNU Public License version 2" /> 
+</plugin_manifest>

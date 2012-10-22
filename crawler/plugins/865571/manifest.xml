@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Lostmon" />
+        <field key="version" value="1.0" />
+        <field key="description" value="Este plugin es un webchat, puede cambiarse facilmente el sevidor al que conecta y el codigo del webchat en /mod/webchat/views/default/xat.php para adaptarlo a sus necesidades" />
+        <field key="website" value="http://lostmon.blogspot.com/" />
+        <field key="copyright" value="(C) Untamed 2012" />
+		<field key="licence" value="GNU Public License version 2" />
+		<field key="elgg_version" value="2010030101" />
+</plugin_manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="ColdTrick IT Solutions" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Provides input/output views for Country and (US/Canada) States" />
+	<field key="website" value="http://www.coldtrick.com/" />
+	<field key="copyright" value="(C) ColdTrick IT Solutions 2009" />
+	<field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>
+<!-- 
+
+Offers input and output views for country and (Canada and US) state selection based on ISO-3166
+
+=====================
+TO DO
+=====================
+- make search compatible
+
+
+=====================
+Version History
+=====================
+0.1:
+	- initial release
+
+-->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Logo</name>
+	<author>Alois Leitner</author>
+	<version>1.8-12.01.24</version>
+	<category>PHLOOR</category>
+	<blurb>Enables a custom site logo for your Elgg site. </blurb>
+	<description>Administrators are able to upload a logo that will be disabled in
+	the sites header section. </description>
+	<website>http://phloor.13net.at</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>false</activate_on_install>
+	<admin_interface>simple</admin_interface>
+	
+	<screenshot>
+		<description>Phloor Custom Logo Admin Interface [0]</description>
+		<path>screenshots/screenshot.png</path>
+	</screenshot>
+		
+	<screenshot>
+		<description>Phloor Custom Logo Admin Interface [1]</description>
+		<path>screenshots/screenshot-0.png</path>
+	</screenshot>
+		
+	<screenshot>
+		<description>Phloor Custom Logo In Action [3]</description>
+		<path>screenshots/screenshot-1.png</path>
+	</screenshot>
+		
+	<screenshot>
+		<description>Phloor Custom Logo In Action [4]</description>
+		<path>screenshots/screenshot-2.png</path>
+	</screenshot>
+	
+</plugin_manifest>

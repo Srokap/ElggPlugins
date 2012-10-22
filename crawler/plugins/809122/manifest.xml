@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Randy Brito" />
+	<field key="version" value="1.7" />
+	<field key="description" value="Shows the user's Xbox and Windows Live profile in a widget." />
+	<field key="website" value="http://randybrito.com" />
+	<field key="copyright" value="(C) Randy Brito 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>

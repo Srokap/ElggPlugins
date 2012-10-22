@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Michal Zacher" />
+        <field key="version" value="1.1" />
+        <field key="description" value="Sends e-mails to all group members" />
+        <field key="website" value="http://www.elggdev.com" />
+        <field key="licence" value="GNU Lesser General Public License version 3" />
+        <field key="copyright" value="Michal Zacher 2009" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>

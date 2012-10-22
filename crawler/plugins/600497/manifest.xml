@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+    <field key="author" value="M.R.A. Welkers" />
+    <field key="version" value="0.2" />
+    <field key="description" value="Syn@ps business card plugin" />
+    <field key="website" value="www.fautloos.nl" />
+    <field key="copyright" value="(C)M.R.A. Welkers 2009" />
+    <field key="elgg_version" value="2009030702" />    
+</plugin_manifest>
+<!--
+
+=====================
+Version History
+=====================
+0.2:
+	- added: translations
+	- changed: location of FPDF library
+	- changed: page handler
+	- changed: generate action
+	- changed: location off custom output/radio view (now in plugin)
+	
+0.1:
+	- initial version
+
+-->

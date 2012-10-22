@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Miguel Rodríguez Pérez" />
+	<field key="version" value="0.21" />
+	<field key="description" value="Google File View" />
+	<field key="website" value="http://lared.det.uvigo.es" />
+        <field key="copyright" value="© Copyright Laboratorio de Redes 2009–2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010012901" />
+        <field key="requires" value="file" />
+</plugin_manifest>

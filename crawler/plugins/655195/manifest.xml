@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="J.Croucher" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Adds a weather widget - using the Google weather API." />
+        <field key="website" value="http://www.elgg.org/" />
+        <field key="copyright" value="" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="recommends" value="" />
+        <field key="elgg_version" value="2009072201" />
+</plugin_manifest>

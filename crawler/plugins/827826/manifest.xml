@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Elgg 1.8.1 Accept Terms</name>
+	<author>Moni; Revised by SpeedySnail6</author>
+	<version>1.2</version>
+	<category>enhancement</category>
+	<description>
+		Ask Users to Read the Site Terms and Indicate Accept Terms on the Register Form.
+		Revised: SpeedySnail6 2011 December 13th.
+	</description>
+	<website>
+		http://KidSpaceX.com/
+	</website>
+	<copyright>
+		(c) Moni 2011; 
+		(c) SpeedySnail6 2011 SpeedySnail6@SpeedySnail6.Com
+	</copyright>
+	<license>GNU Public License Version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2011110700</version>
+	</requires>
+	<admin_interface>simple</admin_interface>
+</plugin_manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Liang Lee Google</name>
+	<author>Liang Lee</author>
+	<version>1.0.0</version>
+	<category>lianglee</category>
+	<category>plugin</category>
+	<description>Allow admin to add sitetracking and site verfication code for Google.</description>
+	<website>http://community.elgg.org/pg/profile/arsalanlee</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GPL2</license>
+      <requires>
+        <type>plugin</type>
+        <name>LiangleeFramework</name>
+        <version>1.1.1</version>
+       </requires>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<activate_on_install>true</activate_on_install>
+</plugin_manifest>

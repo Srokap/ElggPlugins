@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Ivan Vergés & Condiminds.com" />
+	<field key="version" value="2.0" />
+	<field key="description" value="The Kaltura Elgg Plugin powers Elgg social engine with interactive video and rich-media capabilities." />
+	<field key="website" value="http://www.condiminds.com" />
+	<field key="copyright" value="(C) Condiminds 2011" />
+	<field key="licence" value="GNU Public License version 3" />
+	<field key="elgg_version" value="2010040201" />
+</plugin_manifest>

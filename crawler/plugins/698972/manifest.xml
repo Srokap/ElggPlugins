@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Zak Venturo / perfectmedium" />
+        <field key="version" value="1.7.5" />
+        <field key="description" value="Riverdashboard auto refresh with The Wire on riverdashboard option - with ie tweaks" />
+        <field key="website" value="zakaryv@gmail.com" />
+        <field key="copyright" value="(C) homecliq 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest><?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Curverider Ltd / perfectmedium" />
+	<field key="version" value="1.71" />
+	<field key="description" value="Alternative replacement for the standard Elgg dashboard with IE tweaks." />
+	<field key="website" value="http://www.elgg.org/" />
+	<field key="copyright" value="(C) Curverider 2008-2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>

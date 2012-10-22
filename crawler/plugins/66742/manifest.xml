@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="shellcode" />
+	<field key="version" value="1.1" />
+	<field key="description" value="Site Access Demo" />
+	<field key="website" value="http://www.cryptogeek.org/" />
+	<field key="copyright" value="(C) shellcode 2009" />
+	<field key="licence" value="FreeBSD license" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

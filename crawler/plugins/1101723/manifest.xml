@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+        <name>Minimal Hide Search Box</name>
+        <author>iionly</author>
+        <version>1.0</version>
+        <category>enhancements</category>
+        <description>This little plugin hides the search box from people not logged-in.</description>
+        <website>https://github.com/iionly</website>
+        <copyright>(C) iionly 2012</copyright>
+        <license>GNU Public License version 2</license>
+        <requires>
+                <type>elgg_release</type>
+                <version>1.8</version>
+        </requires>
+</plugin_manifest>
