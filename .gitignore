@@ -1,5 +1,5 @@
 wwwroot/engine/settings.php
-
+/wwwroot/.htaccess
 /wwwroot/.buildpath
 /wwwroot/.project
 /wwwroot/.settings/org.eclipse.php.core.prefs
