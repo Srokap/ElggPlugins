@@ -7,12 +7,30 @@
 	<website>http://srokap.pl/</website>
 	<copyright>(C) Paweł Sroka 2012</copyright>
 	<license>http://opensource.org/licenses/BSD-3-Clause</license>
+	
+	<category>integrations</category>
 
 	<requires>
 		<type>elgg_release</type>
 		<version>1.8</version>
 	</requires>
 
-	<category>integrations</category>
+	<provides>
+		<type>plugin</type>
+		<name>srokap_framework</name>
+		<version>1.0</version>
+	</provides>
+
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+	
+	<requires>
+		<type>php_ini</type>
+		<name>allow_url_fopen</name>
+		<value>on</value>
+	</requires>
+
 
 </plugin_manifest>
