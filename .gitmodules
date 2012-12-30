@@ -1,0 +1,6 @@
+[submodule "wwwroot/mod/srokap_framework"]
+	path = wwwroot/mod/srokap_framework
+	url = git@github.com:Srokap/srokap_framework.git
+[submodule "wwwroot/mod/srokap_plugin_installer"]
+	path = wwwroot/mod/srokap_plugin_installer
+	url = git@github.com:Srokap/srokap_plugin_installer.git
