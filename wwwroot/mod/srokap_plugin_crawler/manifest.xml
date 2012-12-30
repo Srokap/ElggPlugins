@@ -15,21 +15,9 @@
 		<version>1.8</version>
 	</requires>
 
-	<provides>
+	<requires>
 		<type>plugin</type>
 		<name>srokap_framework</name>
-		<version>1.0</version>
-	</provides>
-
-	<requires>
-		<type>php_extension</type>
-		<name>curl</name>
-	</requires>
-	
-	<requires>
-		<type>php_ini</type>
-		<name>allow_url_fopen</name>
-		<value>on</value>
 	</requires>
 
 
