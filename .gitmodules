@@ -4,3 +4,6 @@
 [submodule "wwwroot/mod/srokap_plugin_installer"]
 	path = wwwroot/mod/srokap_plugin_installer
 	url = git@github.com:Srokap/srokap_plugin_installer.git
+[submodule "wwwroot/mod/elgg_releases"]
+	path = wwwroot/mod/elgg_releases
+	url = git@github.com:Srokap/elgg_releases.git
