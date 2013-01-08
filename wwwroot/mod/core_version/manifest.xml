@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Core version widget</name>
+	<author>Paweł Sroka (srokap@gmail.com)</author>
+	<version>1.0</version>
+	<description>Provides administration panel widget showing current version of Elgg and checking if installation is up to date. Widget is added automatically on plugin activation.</description>
+	<website>https://srokap.pl/</website>
+	<copyright>(C) Paweł Sroka 2013</copyright>
+	<license>http://opensource.org/licenses/MIT</license>
+	
+	<category>admin</category>
+
+	<screenshot>
+		<path>screenshots/widget.png</path>
+		<description>Version widget view</description>
+	</screenshot>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+
+	<suggests>
+		<type>php_extension</type>
+		<name>curl</name>
+	</suggests>
+	
+	<suggests>
+		<type>php_extension</type>
+		<name>openssl</name>
+	</suggests>
+	
+	<suggests>
+		<type>php_ini</type>
+		<name>allow_url_fopen</name>
+		<value>on</value>
+	</suggests>
+
+
+</plugin_manifest>

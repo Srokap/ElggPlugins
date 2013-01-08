@@ -7,3 +7,6 @@
 [submodule "wwwroot/mod/elgg_releases"]
 	path = wwwroot/mod/elgg_releases
 	url = git@github.com:Srokap/elgg_releases.git
+[submodule "wwwroot/mod/core_version"]
+	path = wwwroot/mod/core_version
+	url = git@github.com:Srokap/core_version.git
