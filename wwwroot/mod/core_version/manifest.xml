@@ -5,6 +5,7 @@
 	<version>1.0</version>
 	<description>Provides administration panel widget showing current version of Elgg and checking if installation is up to date. Widget is added automatically on plugin activation.</description>
 	<website>https://srokap.pl/</website>
+	<repository>https://github.com/Srokap/core_version/</repository>
 	<copyright>(C) Paweł Sroka 2013</copyright>
 	<license>http://opensource.org/licenses/MIT</license>
 	

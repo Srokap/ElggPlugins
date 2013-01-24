@@ -10,3 +10,6 @@
 [submodule "wwwroot/mod/core_version"]
 	path = wwwroot/mod/core_version
 	url = git@github.com:Srokap/core_version.git
+[submodule "wwwroot/mod/srokap_code_review"]
+	path = wwwroot/mod/srokap_code_review
+	url = git@github.com:Srokap/srokap_code_review.git
